@@ -3,16 +3,17 @@
 ### React/한입 크기로 잘라 먹는 리액트(React.js)
 
 우선 새로 React Application을 하나 생성하였다.
+<br>
 
 ## 우리는 이번에 React router라는 라이브러리를 사용할 것이다.
 React router 공식페이지에 접속해보자.<br>
-[React router 공식페이지](https://reactrouter.com/)
+[React router 공식페이지로 이동하기](https://reactrouter.com/)
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkIxVS%2FbtrItu5eHD4%2FI8ZdwM5T4PpGdZOqrsxPok%2Fimg.png)
 
 우선 설치를 해보자. Read the Docs를 통해 Installation으로 접속해보자.
 
-[Installation Page](https://reactrouter.com/docs/en/v6/getting-started/installation)
+[Installation Page로 이동하기](https://reactrouter.com/docs/en/v6/getting-started/installation)
 <br>
 그리고 아래의 명령어로 라이브러리를 설치해보자.
 
