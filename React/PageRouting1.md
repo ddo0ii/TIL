@@ -5,25 +5,25 @@
 우선 새로 React Application을 하나 생성하였다.
 
 ## 우리는 이번에 React router라는 라이브러리를 사용할 것이다.
-React router 공식페이지에 접속해보자.
+React router 공식페이지에 접속해보자.<br>
 [React router 공식페이지](https://reactrouter.com/)
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkIxVS%2FbtrItu5eHD4%2FI8ZdwM5T4PpGdZOqrsxPok%2Fimg.png)
 
 우선 설치를 해보자. Read the Docs를 통해 Installation으로 접속해보자.
 
-[Installation](https://reactrouter.com/docs/en/v6/getting-started/installation)
-
+[Installation Page](https://reactrouter.com/docs/en/v6/getting-started/installation)
+<br>
 그리고 아래의 명령어로 라이브러리를 설치해보자.
 
 ```sh
 npm install react-router-dom@6
 ```
-
+<br>
 그러면 package.json파일에 아래와 같이 설치가 잘 되어있음을 확인할 수 있다.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbK4ZHb%2FbtrIuYSh2Mp%2FOY3lc0mMciGnVexIP8x8Xk%2Fimg.png)
-
+<br>
 그럼 npm start로 구동시켜 보겠다.
 
  
@@ -86,7 +86,7 @@ const Diary = () => {
 
 export default Diary;
 ```
-
+<br><br>
 이제는 React Router Dom을 사용해서 방금 만들었던 페이지들을 특정 주소에 연결해서 Routing을 시도해보자. 
 
  
@@ -102,6 +102,7 @@ export default Diary;
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbkypbe%2FbtrIptsto2y%2FTOpLp7MOHckNyKViktpx0k%2Fimg.png)
 
 그래서 이동될 부분들을 <Routes>로 감싸줘 보자.
+<br>
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpiT0u%2FbtrIpGSzpec%2FOPhKjYps0UEQhBNxGd2POk%2Fimg.png)
 
 그리고 Route컴포넌트를 사용해보자.
@@ -137,6 +138,7 @@ Home 컴포넌트를 mapping시켜서 이와 같이 출력된다고 알면된다
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0bGcd%2FbtrIuXTpFqg%2FHIhkgvfaapywD9O7r7NJ7K%2Fimg.png)
 
 자 그러면 하나의 Route페이지를 추가해보자.
+
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJUCAV%2FbtrIuZcBOMN%2FL9PflmqFrWib5hc3j4BNR0%2Fimg.png)
 
 new페이지로 이동하게 된다면 아래와 같이 출력이 되는것을 확인할 수 있다.
@@ -150,18 +152,20 @@ Routes안에 있는 부분만 변화하도록 설계하였기 때문에 Routes�
  
 
 그러고 이제 다른 페이지들도 Routing해주자.
+
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcrU18a%2FbtrIoJhHL5T%2FCALk7JvhsT5CJCQLsGIvxk%2Fimg.png)
 
 자 그럼 페이지이동을 시키는 요소를 만들어보자.
 
 우리는 기존에 a tag를 통해 페이지를 이동시켰다.
+
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb86RlZ%2FbtrInJJDIg7%2F0JXWXYfKivw14DIE7BwBKk%2Fimg.png)
 
-### 그런데 이 태그를 사용할 경우 계속 페이지가 새로고침되는것을 확인할 수 있다.
+#### 그런데 이 태그를 사용할 경우 계속 페이지가 새로고침되는것을 확인할 수 있다.
 
-### 페이지를 이동하는것은 SPA의 특징이 아니라 MPA의 특징이었다.
+#### 페이지를 이동하는것은 SPA의 특징이 아니라 MPA의 특징이었다.
 
-### 그래서 a태그를 이용하게 된다면 SPA의 장점을 사용하지 못한다는 것이다.
+#### 그래서 a태그를 이용하게 된다면 SPA의 장점을 사용하지 못한다는 것이다.
 
 그래서 우리는 a태그를 사용하지 않을 것이다.
 
