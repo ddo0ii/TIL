@@ -2,6 +2,8 @@
 
 ### React/한입 크기로 잘라 먹는 리액트(React.js)
 
+<br><br><br>
+
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpGdBf%2FbtrHQoqyQUN%2FigKWA6mpcG5whTTbZfX9D1%2Fimg.png)
 
 DiaryList는 onCreate, onRemove, onEdit의  세개의 props를 받지만
@@ -22,11 +24,15 @@ DiaryList는 onCreate, onRemove, onEdit의  세개의 props를 받지만
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDm6u%2FbtrHNK3edZh%2FGRQ7meHKigX4pusgLTTh8k%2Fimg.png)
 
+<br>
+
 1. 모든 데이터를 가지고 있는 컴포넌트가 provider라는 공격자 역할을 하는 자식 컴포넌트에게 자신이 가지고있는 모든 데이터를 준다.
 
 2. Provider는 특별해서 자신의 자손에 해당하는 모든 컴포넌트에게 직통으로 데이터를 줄 수 있다.(props drilling이 없어졌다는 뜻)
 
 3. Probider의 모든 자식 component들은 공급자 component에게 직통으로 공급받게 된다.
+
+<br>
 
 이는 번거로움을 많이 없애준다.(쓸데없이 전달만 하는 props들도 필요없고, 코드도 깔끔해지고 가독성도 좋아진다.)
 
@@ -44,7 +50,7 @@ DiaryList는 onCreate, onRemove, onEdit의  세개의 props를 받지만
 
 그래서 우리는 Context를 이용하여 props drilling을 해결할 수 있게 된 것이다.
 
- 
+<br><br>
 
 ### 자 그래서 우리는 Context API를 사용할 것이다.
  
@@ -77,7 +83,7 @@ export const DiaryStateContext = React.createContext();
 ```
 context도 내보내줘야하기 때문에, export default App;처럼 export해주자!
 
- 
+<br><br>
 
 #### 왜 export일까?
 export default는 파일당 한번밖에 못쓰고, export는 여러번 쓸 수 있는데
@@ -102,6 +108,8 @@ export const와 같이 내보내기가 된 부분은 비구조화 할당을 통�
  
 
 자 그럼 다시 본론으로 다시 들어가서 **DiaryStateContext** 에 공급자를 만들고 데이터를 공급해보겠다.
+
+<br><br><br>
 
 ## 1. Data 공급
 component가 return 하는 부분의 최상위 컴포넌트를 다음과 같이 바꿔준다.(<DiaryStateContext.Provider>로 감싸주기)
@@ -129,7 +137,7 @@ component가 return 하는 부분의 최상위 컴포넌트를 다음과 같이 
 
 **그래서 이 부분으로 감싸져 있는 컴포넌트들은 어디에서든지 사용가능하다는 뜻을 지니고 있다.**
 
- 
+<br><br>
 
 그럼 데이터를 한번 공급을 해보자.
 
@@ -159,6 +167,8 @@ return (
  
 
 이렇게 데이터를 공급하는 과정은 끝이 났다.
+
+<br><br><br>
 
 ##### App.js 최종 코드
 
@@ -297,6 +307,8 @@ export default App;
  
 
 자 그럼 이번에는 context 밑에 있는 자식요소가 data를 사용해보자.
+
+<br><br><br><br>
 
 ## 2. Context 밑 컴포넌트들의 Data 사용
 DiaryList.컴포넌트!
@@ -481,7 +493,7 @@ const { onRemove, onEdit } = useContext(DiaryDispatchContext);
 
  
 
- 
+<br><br><br><br>
 
 #### 최종코드
 ##### App.js
