@@ -2,6 +2,8 @@
 
 ### React/한입 크기로 잘라 먹는 리액트(React.js)
 
+<br><br><br><br>
+
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzMYqJ%2FbtrGJGGJepX%2FpKDxMaOniyW7qT1vIqPSdk%2Fimg.png)
 
 상태변화 로직을 가진 것들은 app component들이었다. 이들은 굉장히 길었었는데 많은 상태변화 처리함수들이 존재했었다.
@@ -11,7 +13,9 @@
 컴포넌트가 길어지고 무거워지는것은 좋지 않다.
 그래서 이 복잡한 컴포넌트들을 바깥으로 분리해보는 방법을 한번 알아보자
 
+<br><br>
 **useReducer - 컴포넌트에서 상태변화 로직을 분리하자.**
+
 먼저 useSate로 1부터 10000까지 더할 수 있는 Counter를 만들어보았다.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUEUHh%2FbtrGHkYOHIr%2FPfkduYIN63x5mgYSl7FVsK%2Fimg.png)
@@ -24,6 +28,8 @@ reducer라는 함수를 컴포넌트 바깥으로 분리하여 다양한 상태�
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F1F7yx%2FbtrGKRHjnCT%2FGROMKuxwUh2PVvgmJIVHuk%2Fimg.png)
 
 useReducer는 useSate를 대체할 수 있는 기능
+
+<br><br>
 
 useSate처럼 배열(const [count, dispatch])을 만들어내고 비구조화 할당(const Counter = () => {})을 통해서 사용한다.
 
@@ -100,6 +106,8 @@ reducer는 두개의 파라미터를 받는데
 여기서 기억해야하는 것은 **reducer가 반환하는 값이 새로운 상태의 값**이다!
 
 **(dispatch를 호출하면 reducer가 실행되고, reducer가 return 하는 값이 data의 값이 된다!)**
+
+<br><br>
 
 자 그러면 type별로 case들을 작성해 보겠다.
 
@@ -192,7 +200,9 @@ const onEdit = useCallback((targetId, newContent) => {
   }, []);
 ```
 
-전체 코드(App.js)
+<br><br><br><br>
+
+**전체 코드(App.js)**
 
 ```js
 import { useCallback, useMemo, useEffect, useRef, useReducer } from "react";
