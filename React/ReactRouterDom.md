@@ -2,6 +2,8 @@
 
 ### React/한입 크기로 잘라 먹는 리액트(React.js)
 
+<br><br><br> 
+
 ## React Router Dom의 유용한 기능
 ### REACT ROUTER V6
 #### REACT에서 CSR기반의 페이지 라우팅을 할 수 있게 해주는 라이브러리
@@ -51,6 +53,7 @@
 그래서 다음과 같이 아래와 같이 두 경우로 코드를 구성한다면 두 경우 모두 정상적으로 출력됨을 알 수 있다.
 
 http://localhost:3000/diary/1
+<br>
 http://localhost:3000/diary
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdondtw%2FbtrItmUYox8%2FPkWwR0sp3rocuLkn8xL24K%2Fimg.png)
@@ -90,7 +93,9 @@ console로 id를 출력해보면 1을 잘 출력하는 것을 확인할 수 있�
 /edit?id=10&mode=dark    => Query String
  
 
-http://localhost:3000/edit?id=10&mode=dark 이 경로로 이동하게 되면 아래와 같이 정상적으로 출력되는 것을 확인할 수 있다.
+http://localhost:3000/edit?id=10&mode=dark
+<br>
+이 경로로 이동하게 되면 아래와 같이 정상적으로 출력되는 것을 확인할 수 있다.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcXSaj0%2FbtrIuamqOeO%2FVadGkMIATAwiBEoUQlew41%2Fimg.png)
 
