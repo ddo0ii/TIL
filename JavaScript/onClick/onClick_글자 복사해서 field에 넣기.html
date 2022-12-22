@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>글자 복사해서 field에 넣기</h1>
+    <p>Field1: <input type="text" id="field1" value="Hello World!" /></p>
+    <p>Field2: <input type="text" id="field2" /></p>
+    <p>Clicking "Copy" triggers a function that copies the text value from Field1 to Field2.</p>
+    <button onclick="myFunction()">Copy</button>
+    <script>
+        function myFunction() {
+            document.getElementById("field2").value = document.getElementById("field1").value;
+        }
+    </script>
+</body>
+
+</html>
