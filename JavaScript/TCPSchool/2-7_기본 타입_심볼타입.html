@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DataType</title>
+</head>
+
+<body>
+
+    <h1>심볼 타입</h1>
+    <p id="result"></p>
+
+    <script>
+        var sym = Symbol("javascript");		// 심볼 타입
+        var symObj = Object(sym); 			// 객체 타입
+
+        document.getElementById("result").innerHTML =
+            (typeof sym) + "<br>" + (typeof symObj);
+    </script>
+
+</body>
+
+</html>
