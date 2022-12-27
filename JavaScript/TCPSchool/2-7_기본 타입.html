@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DataType</title>
+</head>
+
+<body>
+
+    <h1>문자열 타입</h1>
+    <p id="str"></p>
+
+    <script>
+        var firstStr = "이것도 문자열입니다.";		// 큰따옴표를 사용한 문자열
+        var secondStr = '이것도 문자열입니다.';		// 작은따옴표를 사용한 문자열
+        var thirdStr = "나의 이름은 '홍길동'이야."	// 작은따옴표는 큰따옴표로 둘러싸인 문자열에만 포함될 수 있음.
+        var fourthStr = '나의 이름은 "홍길동"이야.'	// 큰따옴표는 작은따옴표로 둘러싸인 문자열에만 포함될 수 있음.
+
+        document.getElementById("str").innerHTML =
+            firstStr + "<br>" + secondStr + "<br>" + thirdStr + "<br>" + fourthStr + "<br>";
+    </script>
+
+</body>
+
+</html>
