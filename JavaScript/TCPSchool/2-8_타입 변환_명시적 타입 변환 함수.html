@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Type Conversion</title>
+</head>
+
+<body>
+
+    <h1>명시적 타입 변환 함수</h1>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("result").innerHTML = Number("10") + "<br>";	// 10
+        document.getElementById("result").innerHTML += String(true) + "<br>";	// "true"
+        document.getElementById("result").innerHTML += Boolean(0) + "<br>";		// false
+        document.getElementById("result").innerHTML += Object(3);				// new Number(3)
+    </script>
+
+</body>
+
+</html>
