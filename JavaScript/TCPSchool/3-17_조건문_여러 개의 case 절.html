@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Conditional Statement</title>
+</head>
+
+<body>
+
+    <h1>여러 개의 case 절을 가지는 switch 문</h1>
+
+    <script>
+        var day = new Date().getDay(); // 오늘의 요일을 반환함. (일요일: 0 ~ 토요일: 6)
+
+        switch (day) {
+            case 1: // 월요일인 경우
+            case 2: // 화요일인 경우
+            case 3: // 수요일인 경우
+            case 4: // 목요일인 경우
+            default: // 0부터 6까지의 값이 아닌 경우
+                document.write("아직도 주말은 멀었네요... 힘내자구요!!");
+                break;
+            case 5: // 금요일인 경우
+                document.write("오늘은 불금이네요!!");
+                break;
+            case 6: // 토요일인 경우
+            case 0: // 일요일인 경우
+                document.write("즐거운 주말에도 열심히 공부하는 당신~ 최고에요!!");
+                break;
+        }
+    </script>
+
+</body>
+
+</html>
