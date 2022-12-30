@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Etc Control Statement</title>
+</head>
+
+<body>
+
+    <h1>continue 문</h1>
+
+    <script>
+        gugudan:
+        for (var i = 2; i <= 9; i++) {
+            dan:
+            for (var j = 1; j <= 9; j++) {
+                if ((i * j) % 2 == 0)
+                    continue dan;
+                document.write(i + " * " + j + " = " + (i * j) + "<br>");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
