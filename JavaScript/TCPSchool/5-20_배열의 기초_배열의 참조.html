@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Array</title>
+</head>
+
+<body>
+
+    <h1>배열의 참조</h1>
+
+    <script>
+        var arr = ["JavaScript"];		// 요소가 하나뿐인 배열을 생성함.
+        var element = arr[0];	// 배열의 첫 번째 요소를 읽어서 할당함.
+        arr[1] = 10;			// 배열의 두 번째 요소에 숫자 10을 할당함. 배열의 길이는 1에서 2로 늘어남.
+        arr[2] = element;		// 배열의 세 번째 요소에 변수 element의 값을 할당함. 배열의 길이는 2에서 3으로 늘어남.
+        document.write("배열 arr의 요소에는 [" + arr + "]가 있습니다.<br>");	// 배열의 요소를 모두 출력함.
+        document.write("배열 arr의 길이는 " + arr.length + "입니다.<br>");		// 배열의 길이를 출력함.
+        delete arr[2];			// 배열의 세 번째 요소를 삭제함. 하지만 배열의 길이는 변하지 않음.
+        document.write("배열 arr의 요소에는 [" + arr + "]가 있습니다.<br>");	// 배열의 요소를 모두 출력함.
+        document.write("배열 arr의 길이는 " + arr.length + "입니다.");			// 배열의 길이를 출력함.
+    </script>
+
+</body>
+
+</html>
