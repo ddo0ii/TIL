@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Array</title>
+</head>
+
+<body>
+
+    <h1>Array</h1>
+
+    <script>
+        var str = "안녕하세요!";       // 문자열 생성
+        document.write(str.charAt(2)); // 하 
+        document.write(str[2]);        // 하
+
+        var arr = [1, true, "JavaScript"]; // 배열 생성
+
+        // typeof
+        document.write(typeof arr);        // object
+
+        // Array.isArray
+        document.write(Array.isArray(arr));      // true
+        document.write(Array.isArray("문자열")); // false
+
+        // instanceof Array
+        document.write((arr instanceof Array) + "<br>");	// true
+        document.write(123 instanceof Array);				// false
+
+        // constructor 프로퍼티
+        function isArray(a) {
+            return a.constructor.toString().indexOf("Array") > -1;
+        }
+        document.write(arr.constructor + "<br>");	// constructor 프로퍼티의 값 출력
+        document.write(arr.constructor.toString() + "<br>");	// function Array() {[native code]}
+        document.write(arr.constructor.toString().indexOf("Array") + "<br>");	// 9
+        document.write(isArray(arr))				// true
+    </script>
+
+</body>
+
+</html>
