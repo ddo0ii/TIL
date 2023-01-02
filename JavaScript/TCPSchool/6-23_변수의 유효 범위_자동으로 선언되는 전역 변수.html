@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Variable Scope</title>
+</head>
+
+<body>
+
+    <h1>자동으로 선언되는 전역 변수</h1>
+
+    <script>
+        // 함수 내부에서 var 키워드를 사용하지 않고 변수를 선언하면, 해당 변수는 지역 변수가 아닌 전역 변수로 선언됨
+        function globalNum() {
+            num = 10;	// var 키워드를 사용하지 않고 변수 num을 선언함.
+            document.write("함수 내부에서 변수 num의 값은 " + num + "입니다.<br>");
+        }
+        globalNum();	// 함수 globalNum()을 호출함.
+        document.write("함수의 호출이 끝난 뒤 변수 num의 값은 " + num + "입니다.");
+    </script>
+
+</body>
+
+</html>
