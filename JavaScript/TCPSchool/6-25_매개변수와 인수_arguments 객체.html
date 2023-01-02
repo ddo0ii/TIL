@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Parameters and Arguments</title>
+</head>
+
+<body>
+
+    <h1>arguments 객체</h1>
+
+    <script>
+        function addNum() {
+            var sum = 0;	// 합을 저장할 변수 sum을 선언함.
+            for (var i = 0; i < arguments.length; i++) {	// 전달받은 인수의 총 수만큼 반복함.
+                sum += arguments[i];					// 각각의 인수를 sum에 더함.
+            }
+            return sum;
+        }
+        document.write("인수가 3개 전달되면 반환값은 " + addNum(1, 2, 3) + "입니다.<br>");
+        document.write("인수가 2개 전달되면 반환값은 " + addNum(1, 2) + "입니다.<br>");
+        document.write("인수가 1개 전달되면 반환값은 " + addNum(1) + "입니다.<br>");
+        document.write("인수가 아무것도 전달되지 않으면 반환값은 " + addNum() + "입니다.<br>");
+        document.write("인수가 10개나 전달되도 반환값은 " + addNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) + "로 잘 동작합니다!!");
+
+        /*
+        결과 값
+        인수가 3개 전달되면 반환값은 6입니다.
+        인수가 2개 전달되면 반환값은 3입니다.
+        인수가 1개 전달되면 반환값은 1입니다.
+        인수가 아무것도 전달되지 않으면 반환값은 0입니다.
+        인수가 10개나 전달되도 반환값은 55로 잘 동작합니다!!
+        */
+    </script>
+
+</body>
+
+</html>
