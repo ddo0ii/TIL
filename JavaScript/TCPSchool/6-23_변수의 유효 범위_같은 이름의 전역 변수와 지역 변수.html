@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Variable Scope</title>
+</head>
+
+<body>
+
+    <h1>같은 이름의 전역 변수와 지역 변수</h1>
+
+    <script>
+        // 전역 변수와 같은 이름의 지역 변수를 선언하면, 해당 블록에서는 해당 이름으로 지역 변수만을 호출할 수 있음
+        var num = 10;		// 전역 변수 num을 선언함.
+        function globalNum() {
+            var num = 20;	// 같은 이름의 지역 변수 num을 선언함.
+            document.write("함수 내부에서 변수 num의 값은 " + num + "입니다.<br>");
+        }
+        globalNum();		// 함수 globalNum()을 호출함.
+        document.write("함수의 호출이 끝난 뒤 변수 num의 값은 " + num + "입니다.");
+    </script>
+
+</body>
+
+</html>
