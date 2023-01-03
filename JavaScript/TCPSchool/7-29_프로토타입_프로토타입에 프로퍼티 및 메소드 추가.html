@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Prototype</title>
+</head>
+
+<body>
+    <h1>프로토타입에 프로퍼티 및 메소드 추가</h1>
+    <script>
+        function Dog(color, name, age) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+            this.family = "시베리안 허스키"; // 프로토타입에 프로퍼티를 추가할 때에는 기본값을 가지게 할 수 있음.
+            this.breed = function () { return this.color + " " + this.family; };
+        }
+
+        var myDog = new Dog("흰색", "마루", 1);
+        var hisDog = new Dog("갈색", "콩이", 3);
+        document.write("우리 집 강아지는 " + myDog.family + "이고, 친구네 집 강아지도 " + hisDog.family + "입니다.");
+    </script>
+</body>
+
+</html>
