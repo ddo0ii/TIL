@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Prototype</title>
+</head>
+
+<body>
+    <h1>프로토타입의 생성</h1>
+    <script>
+        function Dog(color, name, age) {	// 개에 관한 생성자 함수를 작성함.
+            this.color = color;				// 색에 관한 프로퍼티
+            this.name = name;				// 이름에 관한 프로퍼티
+            this.age = age;					// 나이에 관한 프로퍼티
+        }
+
+        var myDog = new Dog("흰색", "마루", 1); // 이 객체는 Dog라는 프로토타입을 가짐.
+        document.write("우리 집 강아지는 " + myDog.name + "라는 이름의 " + myDog.color + " 털이 매력적인 강아지입니다.");
+    </script>
+</body>
+
+</html>
