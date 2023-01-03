@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Handling</title>
+</head>
+
+<body>
+    <h1>객체 프로퍼티의 삭제</h1>
+    <script>
+        function Dog(color, name, age) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+        }
+
+        var myDog = new Dog("흰색", "마루", 1);
+        delete myDog.age; // age 프로퍼티를 삭제함.
+
+        document.write("우리집 강아지의 나이는 " + myDog.age + "입니다."); // age 프로퍼티가 삭제되었기 때문에 undefined를 출력함.        
+    </script>
+</body>
+
+</html>
