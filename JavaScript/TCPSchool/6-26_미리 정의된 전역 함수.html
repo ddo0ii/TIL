@@ -84,6 +84,13 @@
         document.write(dec1 + "<br>" + dec2);
     </script>
 
+    <h1>escape()와 unescape() 함수</h1>
+    <script>
+        var str = "Hello!	World ?#$";
+        var esc = escape(str);
+        var une = unescape(esc);
+        document.write(esc + "<br>" + une);
+    </script>
 </body>
 
 </html>
