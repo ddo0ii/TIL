@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Method</title>
+</head>
+
+<body>
+
+    <h1>객체의 toString() 메소드</h1>
+
+    <script>
+        var arr = [10, "문자열", true];		// 배열
+        var bool = false;					// 불리언
+        function func() {					// 함수
+            return 0;
+        }
+
+        document.write(arr.toString() + "<br>");	// 10,문자열,true
+        document.write(bool.toString() + "<br>");	// false
+        document.write(func.toString());			// 함수의 소스 코드가 전부 문자열로 반환됨.
+    </script>
+
+</body>
+
+</html>
