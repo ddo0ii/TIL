@@ -91,6 +91,20 @@
         var une = unescape(esc);
         document.write(esc + "<br>" + une);
     </script>
+
+    <h1>Number() 함수</h1>
+    <script>
+        document.write(Number("123") + "<br>");
+        document.write(Number("123.000") + "<br>");
+        document.write(Number("123.456") + "<br>");
+        document.write(Number("12 34 56") + "<br>");
+        document.write(Number("123 초콜릿") + "<br><br>");
+
+        document.write(Number(true) + "<br>");
+        document.write(Number(false) + "<br>");
+        document.write(Number(new Date()) + "<br>");
+        document.write(Number(null));
+    </script>
 </body>
 
 </html>
