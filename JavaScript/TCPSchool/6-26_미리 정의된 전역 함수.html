@@ -71,6 +71,19 @@
         document.write(parseInt("10", 16) + "<br>");
         document.write(parseInt("0x10"));
     </script>
+
+    <h1>encodeURI(), encodeURIComponent(), decodeURI(), decodeURIComponent() 함수</h1>
+    <script>
+        var uri = "http://google.com/search.php?name=홍길동&city=서울";
+        var enc1 = encodeURI(uri);
+        var enc2 = encodeURIComponent(uri);
+        document.write(enc1 + "<br>" + enc2 + "<br><br>");
+
+        var dec1 = decodeURI(enc1);
+        var dec2 = decodeURIComponent(enc2);
+        document.write(dec1 + "<br>" + dec2);
+    </script>
+
 </body>
 
 </html>
