@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Prototype</title>
+</head>
+
+<body>
+    <h1>객체에 프로퍼티 및 메소드 추가</h1>
+    <script>
+        function Dog(color, name, age) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+        }
+        var myDog = new Dog("흰색", "마루", 1);
+        myDog.family = "시베리안 허스키";	// 품종에 관한 프로퍼티를 추가함.
+        myDog.breed = function () {			// 털색을 포함한 품종을 반환해 주는 메소드를 추가함.
+            return this.color + " " + this.family;
+        }
+        document.write("우리 집 강아지는 " + myDog.breed() + "입니다.");
+    </script>
+</body>
+
+</html>
