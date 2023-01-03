@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Method</title>
+</head>
+
+<body>
+
+    <h1>객체의 isPrototypeOf() 메소드</h1>
+
+    <script>
+        var day = new Date(); 	// Date 객체를 생성함.
+
+        // 객체 day의 프로토타입이 Date.prototype인지를 검사함.
+        document.write(Date.prototype.isPrototypeOf(day) + "<br>");	// true
+        document.write(Date.prototype.isPrototypeOf(new String()));	// false
+    </script>
+
+</body>
+
+</html>
