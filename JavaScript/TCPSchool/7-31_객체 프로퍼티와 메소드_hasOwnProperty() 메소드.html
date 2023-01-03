@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Method</title>
+</head>
+
+<body>
+
+    <h1>객체의 hasOwnProperty() 메소드</h1>
+
+    <script>
+        function Dog(color, name, age, family) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+            this.family = family;
+            this.breed = function () { return this.color + " " + this.family; }
+        }
+        var myDog = new Dog("검정색", "곰", 3, "불독");
+
+        document.write(myDog.hasOwnProperty("color") + "<br>");	// true
+        document.write(myDog.hasOwnProperty("breed") + "<br>");	// true
+        document.write(myDog.hasOwnProperty("class"));			// 상속받은 속성이므로 false를 반환함.
+    </script>
+
+</body>
+
+</html>
