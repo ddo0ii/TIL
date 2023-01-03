@@ -23,6 +23,17 @@
         var day = new Date(); // new 연산자를 사용하여 Date 타입의 객체를 생성함.
         document.write("올해는 " + day.getFullYear() + "년입니다.");
     </script>
+
+    <h1>Object.create() 메소드를 이용한 객체 생성</h1>
+    <script>
+        var obj = Object.create(null, {				// null 프로토타입을 사용하여 새로운 객체를 만들고
+            x: { value: 100, enumerable: true },	// x좌표를 나타내는 열거할 수 있는 속성과
+            y: { value: 200, enumerable: true }		// y좌표를 나타내는 열거할 수 있는 속성을 추가함.
+        });
+        document.write(obj.x + "<br/>");			// x좌표
+        document.write(obj.y + "<br/>");			// y좌표
+        document.write(Object.getPrototypeOf(obj));	// 객체의 프로토타입을 반환해 줌.
+    </script>
 </body>
 
 </html>
