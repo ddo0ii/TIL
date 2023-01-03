@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Handling</title>
+</head>
+
+<body>
+    <h1>객체간의 비교</h1>
+    <script>
+        function Dog(color, name, age) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+        }
+
+        var myDog = new Dog("흰색", "마루", 1);
+        var hisDog = new Dog("흰색", "마루", 1);		// 모든 프로퍼티의 값이 모두 같은 객체를 생성함.
+        document.write((myDog == hisDog) + "<br>");		// false
+        document.write((myDog === hisDog) + "<br>");	// false
+
+        var herDog = hisDog;							// hisDog 객체를 변수 herDog에 대입함.
+        document.write((hisDog == herDog) + "<br>");	// true
+        document.write((hisDog === herDog) + "<br>");	// true
+    </script>
+</body>
+
+</html>
