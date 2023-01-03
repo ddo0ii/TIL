@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Handling</title>
+</head>
+
+<body>
+    <h1>객체 프로퍼티의 순회</h1>
+    <script>
+        function Dog(color, name, age) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+        }
+        var myDog = new Dog("흰색", "마루", 1);
+
+        // color 프로퍼티의 enumerable 속성을 false로 설정함.
+        Object.defineProperty(myDog, 'color', { enumerable: false });
+        // 객체가 가진 고유 프로퍼티 중에서 열거할 수 있는 프로퍼티 이름을 배열에 담아 반환함.
+        document.write(Object.keys(myDog) + "<br>"); //name,age
+        // 객체가 가진 모든 고유 프로퍼티의 이름을 배열에 담아 반환함.
+        document.write(Object.getOwnPropertyNames(myDog)); //color, name, age
+    </script>
+</body>
+
+</html>
