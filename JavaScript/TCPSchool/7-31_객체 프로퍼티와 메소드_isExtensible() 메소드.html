@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Method</title>
+</head>
+
+<body>
+
+    <h1>객체의 isExtensible() 메소드</h1>
+
+    <script>
+        var day = new Date(); 	// Date 객체를 생성함.
+        // 객체 day에 새로운 프로퍼티를 추가할 수 있는지 검사함.
+        document.write(Object.isExtensible(day) + "<br>");	// true
+
+        // 해당 객체에 새로운 프로퍼티를 추가할 수 없도록 설정함.
+        var myDay = Object.preventExtensions(day);
+        document.write(Object.isExtensible(day));			// false
+    </script>
+
+</body>
+
+</html>
