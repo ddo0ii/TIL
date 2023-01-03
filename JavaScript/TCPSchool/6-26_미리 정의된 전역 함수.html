@@ -14,6 +14,21 @@
         var b = eval("y * 3");
         document.write(a + "<br>" + b);
     </script>
+
+    <h1>isFinite() 함수</h1>
+    <script>
+        document.write(isFinite(123) + "<br>");
+        document.write(isFinite(123e100) + "<br>");
+        document.write(isFinite(0) + "<br>");
+        document.write(isFinite(true) + "<br>");
+        document.write(isFinite(false) + "<br>");
+        document.write(isFinite(null) + "<br>");
+        document.write(isFinite("123") + "<br>");
+        document.write(isFinite("") + "<br>");
+        document.write(isFinite("문자열") + "<br>");
+        document.write(isFinite(undefined) + "<br>");
+        document.write(isFinite(NaN));
+    </script>
 </body>
 
 </html>
