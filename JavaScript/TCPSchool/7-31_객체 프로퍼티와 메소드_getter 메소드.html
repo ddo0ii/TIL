@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Method</title>
+</head>
+
+<body>
+
+    <h1>getter 메소드</h1>
+
+    <script>
+        var gildong = { age: 18 };
+        document.write(gildong.age + "<br>");	// 18
+
+        Object.defineProperty(gildong, "americanAge", { get: function () { return this.age - 1; } });
+        document.write(gildong.americanAge);	// 17
+    </script>
+
+</body>
+
+</html>
