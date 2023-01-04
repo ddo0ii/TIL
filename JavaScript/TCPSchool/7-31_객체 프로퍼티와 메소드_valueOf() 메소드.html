@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Method</title>
+</head>
+
+<body>
+
+    <h1>객체의 valueOf() 메소드</h1>
+
+    <script>
+        function func(n) {
+            this.number = n;
+        }
+
+        myFunc = new func(4);
+        document.write(myFunc + 5);		// ①
+        // [object Object]5
+        func.prototype.valueOf = function () {
+            return this.number;
+        }
+        document.write("<br><br>")
+        document.write(myFunc + 5);		// ②
+        // 9
+    </script>
+
+</body>
+
+</html>
