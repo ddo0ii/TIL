@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Number Object</title>
+</head>
+
+<body>
+
+    <h1>Number 객체</h1>
+
+    <script>
+        var x = 100;						// 숫자 리터럴
+        var y = new Number(100);			// Number 객체
+
+        document.write(x + "<br>");			// 100
+        document.write(y + "<br>");			// 100
+        document.write(typeof x + "<br>");	// number 타입
+        document.write(typeof y + "<br>");	// object 타입
+
+        document.write((x == y) + "<br>");	// 값이 같으므로 true
+        document.write(x === y);			// 서로 다른 객체이므로 false
+    </script>
+
+</body>
+
+</html>
