@@ -17,47 +17,6 @@
         document.write(Number.parseFloat("문자열 56"));				// NaN
     </script>
 
-    <h1>Number.parseInt() 메소드</h1>
-    <script>
-        document.write(Number.parseInt("12") + "<br>");			// 12
-        document.write(Number.parseInt("12.34") + "<br>");		// 12
-        document.write(Number.parseInt("12문자열") + "<br>");	// 12
-        document.write(Number.parseInt("12 34 56") + "<br>");	// 12
-        document.write(Number.parseInt("문자열 56"));			// NaN
-    </script>
-
-    <h1>Number.isNaN() 메소드</h1>
-    <script>
-        document.write(Number.isNaN(NaN) + "<br>");			// true
-        document.write(Number.isNaN(0 / 0) + "<br><br>");	// true
-
-        // 다음은 전역 함수인 isNaN()에서 잘못된 결과를 반환하는 예제임.
-        document.write(isNaN("NaN") + "<br>");				// true
-        document.write(isNaN(undefined) + "<br>");			// true
-        document.write(isNaN("문자열") + "<br><br>");		// true
-
-        // Number.isNaN() 메소드에서는 맞는 결과를 반환하고 있음.
-        document.write(Number.isNaN("NaN") + "<br>");		// false
-        document.write(Number.isNaN(undefined) + "<br>");	// false
-        document.write(Number.isNaN("문자열"));				// false
-    </script>
-
-    <h1>Number.isFinite() 메소드</h1>
-    <script>
-        document.write(Number.isFinite(0) + "<br>");		// true
-        document.write(Number.isFinite(3e45) + "<br><br>");	// true
-
-        document.write(Number.isFinite(Infinity) + "<br>");	// false
-        document.write(Number.isFinite(NaN) + "<br><br>");	// false
-
-        // 다음은 전역 함수인 isFinite()에서 잘못된 결과를 반환하는 예제임.
-        document.write(isFinite("0") + "<br>");				// true
-        document.write(isFinite(null) + "<br><br>");		// true
-
-        // Number.isFinite() 메소드에서는 맞는 결과를 반환하고 있음.
-        document.write(Number.isFinite("0") + "<br>");		// false
-        document.write(Number.isFinite(null));				// false
-    </script>
 </body>
 
 </html>
