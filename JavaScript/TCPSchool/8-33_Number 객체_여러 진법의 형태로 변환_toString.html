@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Number Object</title>
+</head>
+
+<body>
+
+    <h1>여러 진법의 형태로 변환</h1>
+
+    <script>
+        var num = 256;
+
+        document.write(num.toString(2) + "<br>");	//  2진법으로 변환 : 100000000
+        document.write(num.toString(8) + "<br>");	//  8진법으로 변환 : 400
+        document.write(num.toString(10) + "<br>");	// 10진법으로 변환 : 256
+        document.write(num.toString(16) + "<br>");	// 16진법으로 변환 : 100
+
+        // 2진수로 변환한 결괏값을 문자열로 반환함.
+        document.write(num.toString(2) + "<br>");	// 100000000
+        // 문자열을 숫자로 나눴기 때문에 자동으로 10진수로 변환되어 산술 연산된 결괏값
+        document.write(num.toString(2) / 2);		// 50000000
+    </script>
+
+</body>
+
+</html>
