@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Number Object</title>
+</head>
+
+<body>
+
+    <h1>isNaN() 함수</h1>
+
+    <script>
+        var x = 100 * "문자열";
+
+        if (isNaN(x)) { // 전달된 값이 숫자인지 아닌지를 검사함.
+            document.write("변수 x의 값은 숫자가 아닙니다.");
+        } else {
+            document.write("변수 x의 값은 숫자입니다.");
+        }
+
+        /*
+        결과 값
+        변수 x의 값은 숫자가 아닙니다.
+        */
+    </script>
+
+</body>
+
+</html>
