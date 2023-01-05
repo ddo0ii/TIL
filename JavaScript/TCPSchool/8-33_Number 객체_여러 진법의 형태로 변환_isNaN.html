@@ -11,9 +11,17 @@
     <h1>isNaN() 함수</h1>
 
     <script>
-        var x = 100 * "문자열";
+        var x = 100 - "10";			// "10"은 자동으로 숫자로 변환되어 계산됨.
+        var y = 100 - "문자열";		// "문자열"은 숫자로 변환할 수 없기 때문에 NaN을 반환함.
+        var z = 0 / 0;				// 0을 0으로 나눌 수 없기 때문에 NaN을 반환함.
+
+        document.write(x + "<br>");	// 90
+        document.write(y + "<br>");	// NaN
+        document.write(z);			// NaN
+
+        var x1 = 100 * "문자열";
         document.write(isNaN(x) + "<br>"); // true
-        if (isNaN(x)) { // 전달된 값이 숫자인지 아닌지를 검사함.
+        if (isNaN(x1)) { // 전달된 값이 숫자인지 아닌지를 검사함.
             document.write("변수 x의 값은 숫자가 아닙니다.");
         } else {
             document.write("변수 x의 값은 숫자입니다.");
