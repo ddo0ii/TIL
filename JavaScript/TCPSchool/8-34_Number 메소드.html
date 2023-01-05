@@ -42,6 +42,23 @@
         document.write(Number.isNaN("문자열"));				// false
     </script>
 
+    <h1>Number.isFinite() 메소드</h1>
+    <script>
+        document.write(Number.isFinite(0) + "<br>");		// true
+        document.write(Number.isFinite(3e45) + "<br><br>");	// true
+
+        document.write(Number.isFinite(Infinity) + "<br>");	// false
+        document.write(Number.isFinite(NaN) + "<br><br>");	// false
+
+        // 다음은 전역 함수인 isFinite()에서 잘못된 결과를 반환하는 예제임.
+        document.write(isFinite("0") + "<br>");				// true
+        document.write(isFinite(null) + "<br><br>");		// true
+
+        // Number.isFinite() 메소드에서는 맞는 결과를 반환하고 있음.
+        document.write(Number.isFinite("0") + "<br>");		// false
+        document.write(Number.isFinite(null));				// false
+    </script>
+
 </body>
 
 </html>
