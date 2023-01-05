@@ -70,6 +70,17 @@
         document.write(Number.isInteger(true));					// false
     </script>
 
+    <h1>Number.isSafeInteger() 메소드</h1>
+    <script>
+        document.write(Number.isSafeInteger(10) + "<br>");						// true
+        document.write(Number.isSafeInteger(Math.pow(2, 50) - 1) + "<br><br>");	// true
+
+        document.write(Number.isSafeInteger(Math.pow(2, 53)) + "<br>");			// false
+        document.write(Number.isSafeInteger(Infinity) + "<br>");				// false
+        document.write(Number.isSafeInteger(NaN) + "<br>");						// false
+        document.write(Number.isSafeInteger(3.14));								// false
+    </script>
+
 </body>
 
 </html>
