@@ -122,6 +122,17 @@
         document.write((100).toString(16) + "<br>");	// 64
         document.write((-0xff).toString(2));			// -11111111
     </script>
+
+    <h1>valueOf() 메소드</h1>
+    <script>
+        var numObj = new Number(123); 	// 123의 값을 가지는 Number 인스턴스를 생성함.
+        document.write(typeof numObj + "<br>");	// object
+
+        var num = numObj.valueOf();
+        document.write(num + "<br>");	// 123
+        document.write(typeof num);		// number
+    </script>
+
 </body>
 
 </html>
