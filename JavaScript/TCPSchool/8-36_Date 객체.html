@@ -9,13 +9,20 @@
 <body>
 
     <h1>현재 날짜와 시간으로 Date 객체 생성</h1>
-
     <p>결과보기를 다시 누를 때마다 현재 시간이 갱신됩니다.</p>
     <script>
         var date = new Date();	// Date 객체 생성
         document.write(date);
     </script>
 
+    <h1>특정 날짜와 시간으로 Date 객체 생성</h1>
+    <script>
+        document.write(new Date("December 14, 1977 13:30:00") + "<br>");	// 날짜를 나타내는 문자열
+        document.write(new Date(80000000) + "<br>");						// 1970년 1월 1일 0시부터 해당 밀리초만큼 지난 날짜
+        document.write(new Date(16, 5, 25) + "<br>");						// 3개의 숫자로 나타내는 날짜이며, 시간은 자동으로 00:00:00으로 설정됨.
+        document.write(new Date(16, 5, 25, 15, 40, 0) + "<br>");			// 7개의 숫자로 나타내는 시간과 날짜
+        document.write(new Date(2016, 5, 25, 15, 40, 0));					// 2000년대를 표기하고자 할 때에는 연도 4자리를 전부 표기해야 함.
+    </script>
 
 </body>
 
