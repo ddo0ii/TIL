@@ -22,6 +22,27 @@
         document.write(new Date(16, 5, 25) + "<br>");						// 3개의 숫자로 나타내는 날짜이며, 시간은 자동으로 00:00:00으로 설정됨.
         document.write(new Date(16, 5, 25, 15, 40, 0) + "<br>");			// 7개의 숫자로 나타내는 시간과 날짜
         document.write(new Date(2016, 5, 25, 15, 40, 0));					// 2000년대를 표기하고자 할 때에는 연도 4자리를 전부 표기해야 함.
+        /*
+        Wed Dec 14 1977 13:30:00 GMT+0900 (한국 표준시)
+        Fri Jan 02 1970 07:13:20 GMT+0900 (한국 표준시)
+        Sun Jun 25 1916 00:00:00 GMT+0900 (한국 표준시)
+        Sun Jun 25 1916 15:40:00 GMT+0900 (한국 표준시)
+        Sat Jun 25 2016 15:40:00 GMT+0900 (한국 표준시)
+        */
+    </script>
+
+    <h1>Long 날짜 양식</h1>
+    <script>
+        document.write(new Date("Feb 19 1982") + "<br>");		// MMM DD YYYY
+        document.write(new Date("19 Feb 1982") + "<br>");		// DD MMM YYYY
+        document.write(new Date("February 19 1982") + "<br>");	// 월의 축약형 뿐만 아니라 전체 단어도 인식함.
+        document.write(new Date("FEBRUARY, 19, 1982"));			// 쉼표는 무시되며, 대소문자의 구분은 없음.
+        /*
+        Fri Feb 19 1982 00:00:00 GMT+0900 (한국 표준시)
+        Fri Feb 19 1982 00:00:00 GMT+0900 (한국 표준시)
+        Fri Feb 19 1982 00:00:00 GMT+0900 (한국 표준시)
+        Fri Feb 19 1982 00:00:00 GMT+0900 (한국 표준시)
+        */
     </script>
 
 </body>
