@@ -13,7 +13,7 @@
         var nowMiliSec = Date.now();
         document.write(nowMiliSec + "<br>");			// 1970년 1월 1일 00:00:00부터 현재까지의 밀리초
         document.write(new Date(nowMiliSec) + "<br>");	// new Date()와 같은 결과를 반환함.
-        document.write(new Date());
+        document.write(new Date() + "<br>");
 		/*
         1672985940677
         Fri Jan 06 2023 15:19:00 GMT+0900 (한국 표준시)
@@ -24,7 +24,16 @@
     <h1>getFullYear() 메소드</h1>
     <script>
         var date = new Date();
-        document.write("올해는 " + date.getFullYear() + "년입니다.");	// 현재 연도를 반환함.
+        document.write("올해는 " + date.getFullYear() + "년입니다.<br>");	// 현재 연도를 반환함.
+    </script>
+
+
+    <h1>getDate() 메소드</h1>
+    <script>
+        var date = new Date();
+        document.write("오늘은 " + date.getMonth() + "월 " + date.getDate() + "일입니다. <br>");
+        // Month를 반환할때 1월은 적게 출력, 그럼으로 date.getMonth()-1 을 출력해야함
+        document.write("오늘은 " + date.getMonth() + 1 + "월 " + date.getDate() + "일입니다. <br>");	// 현재 날짜를 반환함.
     </script>
 
 </body>
