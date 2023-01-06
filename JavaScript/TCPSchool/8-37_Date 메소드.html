@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Date Method</title>
+</head>
+
+<body>
+
+    <h1>Date.now() 메소드</h1>
+    <script>
+        var nowMiliSec = Date.now();
+        document.write(nowMiliSec + "<br>");			// 1970년 1월 1일 00:00:00부터 현재까지의 밀리초
+        document.write(new Date(nowMiliSec) + "<br>");	// new Date()와 같은 결과를 반환함.
+        document.write(new Date());
+		/*
+        1672985940677
+        Fri Jan 06 2023 15:19:00 GMT+0900 (한국 표준시)
+        Fri Jan 06 2023 15:19:00 GMT+0900 (한국 표준시)
+        */
+    </script>
+
+    <h1>getFullYear() 메소드</h1>
+    <script>
+        var date = new Date();
+        document.write("올해는 " + date.getFullYear() + "년입니다.");	// 현재 연도를 반환함.
+    </script>
+
+</body>
+
+</html>
