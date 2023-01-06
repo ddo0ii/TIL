@@ -28,12 +28,42 @@
     </script>
 
 
-    <h1>getDate() 메소드</h1>
+    <h1>getMonth, getDate() 메소드</h1>
     <script>
         var date = new Date();
         document.write("오늘은 " + date.getMonth() + "월 " + date.getDate() + "일입니다. <br>");
         // Month를 반환할때 1월은 적게 출력, 그럼으로 date.getMonth()-1 을 출력해야함
         document.write("오늘은 " + date.getMonth() + 1 + "월 " + date.getDate() + "일입니다. <br>");	// 현재 날짜를 반환함.
+    </script>
+
+    <h1>getDay() 메소드</h1>
+    <script>
+        var date = new Date();
+        var day;
+        switch (date.getDay()) {	// 현재 요일을 반환함.
+            case 0:
+                day = "일";
+                break;
+            case 1:
+                day = "월";
+                break;
+            case 2:
+                day = "화";
+                break;
+            case 3:
+                day = "수";
+                break;
+            case 4:
+                day = "목";
+                break;
+            case 5:
+                day = "금";
+                break;
+            case 6:
+                day = "토";
+                break;
+        }
+        document.write("오늘은 " + day + "요일입니다.");
     </script>
 
 </body>
