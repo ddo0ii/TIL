@@ -88,6 +88,15 @@
         document.write(date);
     </script>
 
+    <h1>setDate() 메소드</h1>
+    <script>
+        var date = new Date();
+        date.setDate(10);				// Date 객체의 일자 값을 10일로 설정함.
+        document.write(date + "<br>");
+        date.setDate(40);				// 40일을 설정하면, 초과되는 일수만큼 다음달로 넘어감.
+        document.write(date);
+    </script>
+
 </body>
 
 </html>
