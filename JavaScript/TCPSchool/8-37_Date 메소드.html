@@ -71,6 +71,13 @@
         document.write("오늘은 " + days[date.getDay()] + "요일입니다.");
     </script>
 
+    <h1>getTime() 메소드</h1>
+    <script>
+        var date = new Date();
+        var period = date.getTime() / 86400000 // 하루는 86,400,000 밀리초로 계산됨.
+        document.write("1970년 1월 1일부터 오늘까지 " + period.toFixed() + "일이 지났습니다."); // 소수 부분은 생략함.
+    </script>
+
 </body>
 
 </html>
