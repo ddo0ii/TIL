@@ -69,6 +69,17 @@
         */
     </script>
 
+    <h1>Full 날짜 양식</h1>
+    <script>
+        document.write(new Date("Wed May 25 2016 17:00:00 GMT+0900 (Seoul Time)") + "<br>");
+        // GMT가 현재 국가와 다른 시간은 현재 국가의 GMT로 변환되어 표현됨.
+        document.write(new Date("Wed May 25 2016 17:00:00 GMT-0500 (New York Time)"));
+        /*
+        Wed May 25 2016 17:00:00 GMT+0900 (한국 표준시)
+        Thu May 26 2016 07:00:00 GMT+0900 (한국 표준시)
+        */
+    </script>
+
 </body>
 
 </html>
