@@ -16,6 +16,21 @@
         document.write(strEng.length);			// 6
     </script>
 
+    <h1>이스케이프 시퀀스</h1>
+    <script>
+        // 16진수 이스케이프 시퀀스로 \x 다음은 16진수 수로 인식됨.
+        document.write('\xA2' + "<br>");
+        // 유니코드 이스케이프 시퀀스로 \u 다음은 유니코드로 인식됨.
+        document.write('\u00A2' + "<br>");
+        // ECMAScript 6부터 새롭게 추가된 유니코드 코드 포인트 이스케이프 방식임.
+        document.write(String.fromCodePoint(0x00A2) + "<br>");
+        /*
+        ¢
+        ¢
+        ¢
+        */
+    </script>
+
 </body>
 
 </html>
