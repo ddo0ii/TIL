@@ -24,6 +24,14 @@
         document.write(Math.max(1, 10, -100, -10, "문자열", 0));			// NaN
     </script>
 
+    <h1>Math.random() 메소드</h1>
+    <p>결과보기를 다시 누를 때마다 다른 랜덤 숫자가 생성됩니다.</p>
+    <script>
+        var min = 10, max = 20;
+        document.write(Math.random() + "<br>");				// [0, 1)
+        document.write(Math.random() * (max - min) + min);	// [min, max)
+    </script>
+
 </body>
 
 </html>
