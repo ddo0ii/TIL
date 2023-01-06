@@ -49,6 +49,19 @@
         */
     </script>
 
+    <h1>String 객체</h1>
+    <script>
+        var str = "JavaScript";
+        var strObj = new String("JavaScript");
+
+        document.write(str + "<br>");				// "JavaScript"
+        document.write(strObj + "<br>");			// "JavaScript"
+        document.write(typeof str + "<br>");		// string
+        document.write(typeof strObj + "<br>");		// object
+        document.write((str == strObj) + "<br>");	// 문자열 값이 같으므로, true를 반환함.
+        document.write((str === strObj));			// 문자열 값은 같지만 타입이 다르므로, false를 반환함.
+    </script>
+
 </body>
 
 </html>
