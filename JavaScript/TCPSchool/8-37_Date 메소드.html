@@ -65,6 +65,11 @@
         }
         document.write("오늘은 " + day + "요일입니다.");
     </script>
+    <script>
+        var date = new Date();
+        var days = ["일", "월", "화", "수", "목", "금", "토"];
+        document.write("오늘은 " + days[date.getDay()] + "요일입니다.");
+    </script>
 
 </body>
 
