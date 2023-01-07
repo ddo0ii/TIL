@@ -20,6 +20,19 @@
         document.write(String.fromCodePoint(194564)); // "\uD87E\uDC04"
     </script>
 
+    <h1>문자열에서의 위치 찾기</h1>
+    <script>
+        var str = "abcDEFabc";
+
+        document.write(str.indexOf('abc') + "<br>");		// 0
+        document.write(str.indexOf('abcd') + "<br>");		// -1
+        document.write(str.indexOf('abc', 3) + "<br><br>");	// 6
+
+        document.write(str.lastIndexOf('abc') + "<br>");	// 6
+        document.write(str.lastIndexOf('d') + "<br>");		// -1
+        document.write(str.lastIndexOf('c'));				// 8
+    </script>
+
 </body>
 
 </html>
