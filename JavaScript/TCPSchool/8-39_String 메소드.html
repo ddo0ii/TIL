@@ -33,6 +33,16 @@
         document.write(str.lastIndexOf('c'));				// 8
     </script>
 
+    <h1>문자열에서 지정된 위치에 있는 문자 반환</h1>
+    <script>
+        var str = "abcDEFabc";
+
+        document.write(str.charAt(0) + "<br>");			// a
+        document.write(str.charAt(10) + "<br>");		// 빈 문자열
+        document.write(str.charCodeAt(0) + "<br>");		// 97
+        document.write(str.codePointAt(0));				// 97
+    </script>
+
 </body>
 
 </html>
