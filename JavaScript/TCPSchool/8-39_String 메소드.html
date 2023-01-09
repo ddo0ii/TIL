@@ -43,6 +43,18 @@
         document.write(str.codePointAt(0));				// 97
     </script>
 
+    <h1>문자열 추출</h1>
+    <script>
+        var str = "abcDEFabc";
+
+        document.write(str.slice(2, 6) + "<br>");		// cDEF
+        document.write(str.slice(-4, -2) + "<br>");		// Fa
+        document.write(str.slice(2) + "<br>");			// cDEFabc
+
+        document.write(str.substring(2, 6) + "<br>");	// cDEF
+        document.write(str.substr(2, 6));				// cDEF
+    </script>
+
 </body>
 
 </html>
