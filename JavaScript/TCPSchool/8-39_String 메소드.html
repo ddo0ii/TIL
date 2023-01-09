@@ -55,6 +55,22 @@
         document.write(str.substr(2, 6));				// cDEF
     </script>
 
+    <h1>문자열 추출</h1>
+    <script>
+        var str = "자바스크립트는 너무 멋져요! 그리고 유용해요.";
+
+        document.write(str.split() + "<br>");		// 구분자를 명시하지 않으면 아무런 동작도 하지 않음.
+        document.write(str.split("") + "<br>");		// 한 문자("")씩 나눔.
+        document.write(str.split(" ") + "<br>");	// 띄어쓰기(" ")를 기준으로 나눔.
+        document.write(str.split("!"));				// 느낌표("!"")를 기준으로 나눔.
+        /*
+        자바스크립트는 너무 멋져요! 그리고 유용해요.
+        자,바,스,크,립,트,는, ,너,무, ,멋,져,요,!, ,그,리,고, ,유,용,해,요,.
+        자바스크립트는,너무,멋져요!,그리고,유용해요.
+        자바스크립트는 너무 멋져요, 그리고 유용해요.
+        */
+    </script>
+
 </body>
 
 </html>
