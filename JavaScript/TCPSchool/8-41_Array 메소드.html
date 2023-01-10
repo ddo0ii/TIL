@@ -57,11 +57,19 @@
         document.write(arr.length + "<br>");	// 3
         arr.unshift("자바스크립트");
         document.write(arr.length + "<br>");	// 4
-        document.write(arr + "<br><br>");		// [자바스크립트,1,true,JavaScript]
+        document.write(arr + "<br><br>");		// 자바스크립트,1,true,JavaScript
 
         arr.unshift(2, "거짓");
         document.write(arr.length + "<br>");	// 6
-        document.write(arr);					// [2,거짓,자바스크립트,1,true,JavaScript]
+        document.write(arr);					// 2,거짓,자바스크립트,1,true,JavaScript
+    </script>
+
+    <h1>reverse() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript", "자바스크립트"];
+
+        document.write(arr.reverse());	// 자바스크립트,JavaScript,true,1
     </script>
 
 </body>
