@@ -19,6 +19,19 @@
         document.write(Array.isArray(true));						// false
     </script>
 
+    <h1>Array.from() 메소드</h1>
+
+    <script>
+        function arrayFrom() {
+            return Array.from(arguments);
+        }
+        document.write(Array.from(arrayFrom(1, 2, 3)) + "<br>");	// [1, 2, 3]
+
+        var myMap = new Map([[1, 2], [3, 4]]);
+        document.write(Array.from(myMap) + "<br>");					// [1, 2, 3, 4]
+
+        document.write(Array.from("JavaScript"));					// [J,a,v,a,S,c,r,i,p,t]
+    </script>
 </body>
 
 </html>
