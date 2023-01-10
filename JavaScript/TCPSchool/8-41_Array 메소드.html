@@ -72,6 +72,16 @@
         document.write(arr.reverse());	// 자바스크립트,JavaScript,true,1
     </script>
 
+    <h1>sort() 메소드</h1>
+
+    <script>
+        var strArr = ["로마", "나라", "감자", "다람쥐"];	// 한글은 ㄱ,ㄴ,ㄷ순으로 정렬됨.
+        var numArr = [10, 21, 1, 2, 3];						// 숫자는 각 자릿수 별로 비교된 후 정렬됨.
+
+        document.write(strArr.sort() + "<br>");	// [감자,나라,다람쥐,로마]
+        document.write(numArr.sort());			// [1,10,2,21,3]
+    </script>
+
 </body>
 
 </html>
