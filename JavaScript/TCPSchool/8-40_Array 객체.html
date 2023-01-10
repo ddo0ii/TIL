@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Array Object</title>
+</head>
+
+<body>
+
+    <h1>Array.isArray() 메소드</h1>
+
+    <script>
+        document.write(Array.isArray([]) + "<br>");					// true
+        document.write(Array.isArray(new Array()) + "<br><br>");	// true
+
+        document.write(Array.isArray(123) + "<br>");				// false
+        document.write(Array.isArray("Array") + "<br>");			// false
+        document.write(Array.isArray(true));						// false
+    </script>
+
+</body>
+
+</html>
