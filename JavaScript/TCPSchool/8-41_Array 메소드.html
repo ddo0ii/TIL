@@ -33,8 +33,22 @@
         document.write(arr.length + "<br>");	// 3
         document.write(arr.pop() + "<br>");		// JavaScript
         document.write(arr.length + "<br>");	// 2
-        document.write(arr);					// [1,true]
+        document.write(arr);					// 1,true
     </script>
+
+    <h1>shift() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript", "자바스크립트"];
+
+        document.write(arr.length + "<br>");	// 4
+        document.write(arr.shift() + "<br>");	// 1
+        document.write(arr.length + "<br>");	// 3
+        document.write(arr.shift() + "<br>");	// true
+        document.write(arr.length + "<br>");	// 2
+        document.write(arr);					// [JavaScript,자바스크립트]
+    </script>
+
 </body>
 
 </html>
