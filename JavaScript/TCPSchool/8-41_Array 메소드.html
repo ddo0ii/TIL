@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Array Object</title>
+</head>
+
+<body>
+
+    <h1>push() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript"];
+
+        document.write(arr.length + "<br>");	// 3
+        arr.push("자바스크립트");
+        document.write(arr.length + "<br>");	// 4
+        document.write(arr + "<br><br>");		// [1,true,JavaScript,자바스크립트]
+
+        arr.push(2, "거짓");
+        document.write(arr.length + "<br>");	// 6
+        document.write(arr);					// [1,true,JavaScript,자바스크립트,2,거짓]
+    </script>
+
+</body>
+
+</html>
