@@ -181,6 +181,17 @@
         document.write(arr.every(compareValue));	// true
     </script>
 
+    <h1>some() 메소드</h1>
+
+    <script>
+        var arr = [10, 25, -20, 14];
+        function compareValue(value) {
+            return value < 10;	// 배열 요소 중 -20만이 10보다 작음.
+        }
+
+        document.write(arr.some(compareValue));	// true
+    </script>
+
 </body>
 
 </html>
