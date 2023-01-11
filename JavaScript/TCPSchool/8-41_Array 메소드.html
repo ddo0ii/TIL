@@ -92,6 +92,18 @@
         document.write(arr + "<br>");		// [1,false,C언어,자바스크립트]
         document.write(removedElement);		// [true,JavaScript]
     </script>
+
+    <h1>join() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript"];
+
+        document.write(arr.join() + "<br>");		// 1,true,JavaScript
+        document.write(arr.join(' + ') + "<br>");	// 1 + true + JavaScript
+        document.write(arr.join(' ') + "<br>");		// 1 true JavaScript
+        document.write(arr.join(''));				// 1trueJavaScript
+    </script>
+
 </body>
 
 </html>
