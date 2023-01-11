@@ -79,6 +79,17 @@
     <script>
         var title = document.title;		// <title> 요소를 선택함.
         document.write(title);
+        /*
+        JavaScript DOM Element
+        */
+    </script>
+
+    <h1>innerHTML을 이용한 요소의 내용 변경</h1>
+    <p id="text">이 문장을 바꿀 것입니다!</p>
+
+    <script>
+        var str = document.getElementById("text");
+        str.innerHTML = "이 문장으로 바뀌었습니다!";
     </script>
 
 </body>
