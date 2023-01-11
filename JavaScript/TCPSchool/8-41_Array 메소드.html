@@ -203,6 +203,17 @@
         document.write(arr.reduce(sumOfValues));	// 1 - 2 - 3 - 4 - 5 = -13
     </script>
 
+    <h1>reduceRight() 메소드</h1>
+
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        function sumOfValues(x, y) {
+            return x - y;
+        }
+
+        document.write(arr.reduceRight(sumOfValues));	// 5 - 4 - 3 - 2 - 1 = -5
+    </script>
+
 </body>
 
 </html>
