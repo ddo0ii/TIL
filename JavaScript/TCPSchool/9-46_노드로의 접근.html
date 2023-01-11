@@ -44,6 +44,29 @@
         document.getElementById("document").innerHTML = document.nodeType;	// 9
     </script>
 
+    <h1>빈 텍스트 노드의 처리</h1>
+    <div id="parentNode">
+        <p><span>첫 번째 단락</span> 입니다.</p>
+        <p>두 번째 단락 입니다.</p>
+    </div>
+    <button onclick="printLastChild()">마지막 자식 노드 찾기!</button>
+    <p id="nodename"></p>
+
+    <script>
+        var lastNode;
+        function findLastChild(parentNode) {
+            lastNode = parentNode.lastChild;
+            while (lastNode.nodeType != 1) {
+                lastNode = lastNode.previousSibling;
+            }
+        }
+        function printLastChild() {
+            var parentNode = document.getElementById("parentNode");
+            findLastChild(parentNode);
+            document.getElementById("nodename").innerHTML = lastNode.nodeName;
+        }
+    </script>
+
 </body>
 
 </html>
