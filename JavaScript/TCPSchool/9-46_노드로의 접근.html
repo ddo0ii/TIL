@@ -20,6 +20,18 @@
         document.getElementById("html").innerHTML = document.childNodes[1].childNodes[0].nodeName;	// HEAD
     </script>
 
+    <h1 id="heading">nodeValue 프로퍼티</h1>
+    <p id="text1">텍스트</p>
+    <p id="text2">텍스트</p>
+
+    <script>
+        // 아이디가 "heading"인 요소의 첫 번째 자식 노드의 노드값을 선택함.
+        var headingText = document.getElementById("heading").firstChild.nodeValue;
+
+        document.getElementById("text1").innerHTML = headingText;
+        document.getElementById("text2").firstChild.nodeValue = headingText;
+    </script>
+
 </body>
 
 </html>
