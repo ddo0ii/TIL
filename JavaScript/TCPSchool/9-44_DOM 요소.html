@@ -57,6 +57,23 @@
         }
     </script>
 
+    <h1>CSS 선택자를 이용한 선택</h1>
+    <p class="odd">첫 번째 단락이에요!</p>
+    <ul>
+        <li class="odd">첫 번째 아이템이에요!</li>
+        <li>두 번째 아이템이에요!</li>
+        <li class="odd">세 번째 아이템이에요!</li>
+        <li>네 번째 아이템이에요!</li>
+        <li class="odd">다섯 번째 아이템이에요!</li>
+    </ul>
+
+    <script>
+        var selectedItem = document.querySelectorAll("li.odd");	// 클래스가 "odd"인 요소 중에서 <li> 요소만을 선택함.
+        for (var i = 0; i < script selectedItem.length; i++) {
+            selectedItem.item(i).style.color = "red";			// 선택된 모든 요소의 텍스트 색상을 변경함.
+        }
+    </script>
+
 </body>
 
 </html>
