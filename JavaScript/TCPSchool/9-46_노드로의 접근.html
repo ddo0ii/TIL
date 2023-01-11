@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Node Access</title>
+</head>
+
+<body>
+
+    <h1>nodeName 프로퍼티</h1>
+    <p id="document"></p>
+    <p id="html"></p>
+
+    <script>
+        // HTML 문서의 모든 자식 노드 중에서 두 번째 노드의 이름을 선택함.
+        document.getElementById("document").innerHTML = document.childNodes[1].nodeName;			// HTML
+
+        // html 노드의 모든 자식 노드 중에서 첫 번째 노드의 이름을 선택함.
+        document.getElementById("html").innerHTML = document.childNodes[1].childNodes[0].nodeName;	// HEAD
+    </script>
+
+</body>
+
+</html>
