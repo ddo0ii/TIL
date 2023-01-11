@@ -113,6 +113,16 @@
         document.write(arr.slice(1));				// [true,JavaScript,자바스크립트 ]
     </script>
 
+    <h1>concat() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript"];
+
+        document.write(arr.concat([2, false, "문자열"]) + "<br>");	// [1,true,JavaScript,2,false,문자열]
+        document.write(arr.concat([2], [3, 4]) + "<br>");			// [1,true,JavaScript,2,3,4]
+        document.write(arr.concat("다섯", [6, 7]) + "<br>");		// [1,true,JavaScript,다섯,6,7]
+    </script>
+
 </body>
 
 </html>
