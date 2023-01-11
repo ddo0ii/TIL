@@ -82,6 +82,16 @@
         document.write(numArr.sort());			// [1,10,2,21,3]
     </script>
 
+    <h1>splice() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript", "자바스크립트"];
+
+        // 인덱스 1의 요소부터 2개의 요소를 제거한 후, false와 "C언어"를 그 자리에 삽입함.
+        var removedElement = arr.splice(1, 2, false, "C언어");
+        document.write(arr + "<br>");		// [1,false,C언어,자바스크립트]
+        document.write(removedElement);		// [true,JavaScript]
+    </script>
 </body>
 
 </html>
