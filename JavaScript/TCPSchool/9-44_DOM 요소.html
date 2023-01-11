@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM Element</title>
+</head>
+
+<body>
+
+    <h1>HTML 태그 이름을 이용한 선택</h1>
+    <ul>
+        <li>첫 번째 아이템이에요!</li>
+        <li>두 번째 아이템이에요!</li>
+        <li>세 번째 아이템이에요!</li>
+        <li>네 번째 아이템이에요!</li>
+        <li>다섯 번째 아이템이에요!</li>
+    </ul>
+
+    <script>
+        var selectedItem = document.getElementsByTagName("li");		// 모든 <li> 요소를 선택함.
+        for (var i = 0; i < selectedItem.length; i++) {
+            selectedItem.item(i).style.color = "red";	// 선택된 모든 요소의 텍스트 색상을 변경함.
+        }
+    </script>
+
+</body>
+
+</html>
