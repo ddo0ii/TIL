@@ -158,6 +158,18 @@
         document.write(absoluteValues);		// [1,2,3,4]
     </script>
 
+    <h1>filter() 메소드</h1>
+
+    <script>
+        var arr = [-10, 5, 100, -20, 40];
+        function compareValue(value) {
+            return value < 10;
+        }
+
+        var lessTen = arr.filter(compareValue);
+        document.write(lessTen);		// [-10,5,-20]
+    </script>
+
 </body>
 
 </html>
