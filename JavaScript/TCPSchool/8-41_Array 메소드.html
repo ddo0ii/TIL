@@ -214,6 +214,17 @@
         document.write(arr.reduceRight(sumOfValues));	// 5 - 4 - 3 - 2 - 1 = -5
     </script>
 
+    <h1>entries() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "TCPSchool"];
+        var arrEntries = arr.entries();
+
+        for (var entry of arrEntries) {
+            document.write(entry + "<br>"); // 배열의 각 인덱스별로 키(key)와 값(value)의 한 쌍을 출력함.
+        }
+    </script>
+
 </body>
 
 </html>
