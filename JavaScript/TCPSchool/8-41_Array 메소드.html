@@ -192,6 +192,17 @@
         document.write(arr.some(compareValue));	// true
     </script>
 
+    <h1>reduce() 메소드</h1>
+
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        function sumOfValues(x, y) {
+            return x - y;
+        }
+
+        document.write(arr.reduce(sumOfValues));	// 1 - 2 - 3 - 4 - 5 = -13
+    </script>
+
 </body>
 
 </html>
