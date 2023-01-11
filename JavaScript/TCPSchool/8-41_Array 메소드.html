@@ -131,6 +131,17 @@
         document.write(arr.toString() + "<br>");	// '1,true,JavaScript'
     </script>
 
+    <h1>forEach() 메소드</h1>
+
+    <script>
+        var arr = [1, true, "JavaScript"];
+        function printArr(value, index, array) {
+            document.write("arr[" + index + "] = " + value + "<br>");
+        }
+
+        arr.forEach(printArr);	// 배열 arr의 각 요소마다 printArr() 함수가 호출됨.
+    </script>
+
 </body>
 
 </html>
