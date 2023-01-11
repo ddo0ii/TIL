@@ -104,6 +104,21 @@
         }
     </script>
 
+    <h1>DOM 요소의 스타일 변경</h1>
+    <p id="text">이 문자열의 기본색은 검정색입니다!</p>
+    <button onclick="changeRedColor()">빨간색 글자!</button>
+    <button onclick="changeBlackColor()">검정색 글자!</button>
+
+    <script>
+        var str = document.getElementById("text");	// 아이디가 "str"인 요소를 선택함.
+        function changeRedColor() {
+            str.style.color = "red";				// 해당 요소의 글자색을 빨간색으로 변경함.
+        }
+        function changeBlackColor() {
+            str.style.color = "black";				// 해당 요소의 글자색을 검정색으로 변경함.
+        }
+    </script>
+
 </body>
 
 </html>
