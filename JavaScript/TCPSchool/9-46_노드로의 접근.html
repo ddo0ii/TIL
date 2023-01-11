@@ -32,6 +32,18 @@
         document.getElementById("text2").firstChild.nodeValue = headingText;
     </script>
 
+    <h1 id="heading">nodeType 프로퍼티</h1>
+    <p id="head"></p>
+    <p id="document"></p>
+
+    <script>
+        // 아이디가 "heading"인 요소의 첫 번째 자식 노드의 타입을 선택함.
+        var headingType = document.getElementById("heading").firstChild.nodeType;
+
+        document.getElementById("head").innerHTML = headingType;			// 3
+        document.getElementById("document").innerHTML = document.nodeType;	// 9
+    </script>
+
 </body>
 
 </html>
