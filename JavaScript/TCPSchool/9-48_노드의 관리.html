@@ -92,6 +92,22 @@
         }
     </script>
 
+    <h1>removeChild() 메소드</h1>
+    <button onclick="remove()">요소 노드 삭제!</button>
+    <div id="list">
+        <p>HTML</p>
+        <p id="item">CSS</p>
+        <p>JavaScript</p>
+    </div>
+
+    <script>
+        function remove() {
+            var parent = document.getElementById("list");		// 아이디가 "list"인 요소를 선택함.
+            var removedItem = document.getElementById("item");	// 아이디가 "item"인 요소를 선택함.
+            parent.removeChild(removedItem);					// 지정된 요소를 삭제함.
+        }
+    </script>
+
 </body>
 
 </html>
