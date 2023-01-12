@@ -40,6 +40,27 @@
         document.write(listItems[2].nodeValue);
     </script>
 
+    <h1>노드 리스트의 length 속성</h1>
+    <ul id="list">
+        <li>첫 번째 아이템이에요!</li>
+        <li>두 번째 아이템이에요!</li>
+        <li>세 번째 아이템이에요!</li>
+    </ul>
+    <p id="text"></p>
+    <button onclick="changeTextColor()">글자색 변경!</button>
+
+    <script>
+        var listItems = document.getElementsByTagName("li");	// 모든 <li> 요소들을 선택함.
+        document.getElementById("text").innerHTML =
+            "이 노드 리스트의 길이는 " + listItems.length + "개 입니다.<br>";	// 모든 자식 노드들의 개수를 반환함.
+
+        function changeTextColor() {
+            for (var i = 0; i < listItems.length; i++) {
+                listItems[i].style.color = "orange";	// 모든 자식 노드들의 글자색을 변경함.
+            }
+        }
+    </script>
+
 </body>
 
 </html>
