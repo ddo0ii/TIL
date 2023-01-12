@@ -25,6 +25,24 @@
         }
     </script>
 
+    <h1>insertBefore() 메소드</h1>
+    <h2 id="item">JavaScript</h2>
+    <div id="list">
+        <p>HTML</p>
+        <p id="criteria">CSS</p>
+        <p>JQuery</p>
+    </div>
+    <button onclick="appendNode()">노드 추가!</button>
+
+    <script>
+        function appendNode() {
+            var parent = document.getElementById("list");			// 아이디가 "list"인 요소를 선택함.
+            var criteriaItem = document.getElementById("criteria");	// 아이디가 "criteria"인 요소를 선택함.
+            var newItem = document.getElementById("item");			// 아이디가 "item"인 요소를 선택함.
+            parent.insertBefore(newItem, criteriaItem);				// 해당 노드를 기준이 되는 자식 노드의 바로 앞에 추가함.
+        }
+    </script>
+
 </body>
 
 </html>
