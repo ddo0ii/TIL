@@ -80,6 +80,18 @@
         }
     </script>
 
+    <h1>텍스트 노드의 생성</h1>
+    <button onclick="createNode()">텍스트 노드 생성!</button>
+    <p id="text"></p>
+
+    <script>
+        function createNode() {
+            var elementNode = document.getElementById("text");				// 아이디가 "text"인 요소를 선택함.
+            var newText = document.createTextNode("새로운 텍스트에요! ");	// 새로운 텍스트 노드를 생성함.
+            elementNode.appendChild(newText);								// 해당 요소의 자식 노드로 추가함.
+        }
+    </script>
+
 </body>
 
 </html>
