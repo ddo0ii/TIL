@@ -43,6 +43,17 @@
         }
     </script>
 
+    <h1>insertData() 메소드</h1>
+    <p id="text">지금 시간은 오후 3시입니다.</p>
+    <button onclick="appendText()">텍스트 추가!</button>
+
+    <script>
+        var text = document.getElementById("text").firstChild;	// 아이디가 "text"인 요소의 텍스트 노드를 선택함.
+        function appendText() {
+            text.insertData(6, " 나른한 ");	// 텍스트 노드의 6번째 문자부터 " 나른한 "이란 텍스트를 추가함.
+        }
+    </script>
+
 </body>
 
 </html>
