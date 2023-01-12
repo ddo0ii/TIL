@@ -22,6 +22,24 @@
         listItems[1].firstChild.nodeValue = "HTML 요소의 내용을 변경했어요!";
     </script>
 
+    <h1>노드 리스트의 텍스트 노드</h1>
+    <ul id="list">ul 요소 다음의 텍스트
+        <li>첫 번째 아이템이에요!</li>첫 번째 li 요소 다음의 텍스트
+        <li>두 번째 아이템이에요!</li>두 번째 li 요소 다음의 텍스트
+        <li>세 번째 아이템이에요!</li>세 번째 li 요소 다음의 텍스트
+    </ul>
+
+    <script>
+        // 아이디가 "list"인 요소의 모든 자식 노드들을 선택함.
+        var listItems = document.getElementById("list").childNodes;
+        // 자식 노드들 중 첫 번째 노드의 값을 출력함.
+        document.write(listItems[0].nodeValue + "<br>");
+        // 자식 노드들 중 두 번째 노드의 자식 노드 중 첫 번째 노드의 값을 출력함.
+        document.write(listItems[1].firstChild.nodeValue + "<br>");
+        // 자식 노드들 중 세 번째 노드의 값을 출력함.
+        document.write(listItems[2].nodeValue);
+    </script>
+
 </body>
 
 </html>
