@@ -108,6 +108,34 @@
         }
     </script>
 
+    <h1>removeAttribute() 메소드</h1>
+    <button onclick="remove()">속성 노드 삭제!</button>
+    <p id="text" style="color:red; background-color:lemonchiffon;">이 단락의 속성이 제거될 것입니다.</p>
+
+    <script>
+        function remove() {
+            var text = document.getElementById("text");		// 아이디가 "text"인 요소를 선택함.
+            text.removeAttribute("style");					// 해당 요소의 "style" 속성을 제거함.
+        }
+    </script>
+
+    <h1>cloneNode() 메소드</h1>
+    <button onclick="cloneElement()">노드 복제!</button>
+    <h2 id="item">JavaScript</h2>
+    <div id="list">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JQuery</p>
+    </div>
+
+    <script>
+        function cloneElement() {
+            var parent = document.getElementById("list");			// 아이디가 "list"인 요소를 선택함.
+            var originItem = document.getElementById("item");		// 아이디가 "item"인 요소를 선택함.
+            parent.appendChild(originItem.cloneNode(true));			// 해당 노드를 복제하여 리스트의 맨 마지막에 추가함.
+        }
+    </script>
+
 </body>
 
 </html>
