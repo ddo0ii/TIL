@@ -67,6 +67,19 @@
         }
     </script>
 
+    <h1>속성 노드의 생성</h1>
+    <p id="text">이 단락에 새로운 속성을 추가할 것입니다.</p>
+    <button onclick="createNode()">속성 노드 생성!</button>
+
+    <script>
+        function createNode() {
+            var text = document.getElementById("text");				// 아이디가 "text"인 요소를 선택함.
+            var newAttribute = document.createAttribute("style");	// 새로운 style 속성 노드를 생성함.
+            newAttribute.value = "color:red";
+            text.setAttributeNode(newAttribute);					// 해당 요소의 속성 노드로 추가함.
+        }
+    </script>
+
 </body>
 
 </html>
