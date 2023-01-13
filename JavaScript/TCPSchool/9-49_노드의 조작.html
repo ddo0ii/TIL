@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Node Handle</title>
+</head>
+
+<body>
+
+    <h1>텍스트 노드의 값 변경</h1>
+    <p id="text">이 텍스트를 변경하고 싶어요!</p>
+    <button onclick="changeText()">텍스트 변경!</button>
+
+    <script>
+        var para = document.getElementById("text");		// 아이디가 "text"인 요소를 선택함.
+        function changeText() {
+            para.firstChild.nodeValue = "텍스트 변경 완료!";
+        }
+    </script>
+
+</body>
+
+</html>
