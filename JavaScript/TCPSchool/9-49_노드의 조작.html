@@ -38,6 +38,23 @@
         }
     </script>
 
+    <h1>요소 노드의 교체</h1>
+    <div id="parent">
+        <p id="first">첫 번째 요소입니다.</p>
+        <p>두 번째 요소입니다.</p>
+    </div>
+    <p id="third">세 번째 요소입니다.</p>
+    <button onclick="changeNode()">요소 노드 교체!</button>
+
+    <script>
+        var parent = document.getElementById("parent");	// 부모 노드를 선택함.
+        var first = document.getElementById("first");
+        var third = document.getElementById("third");
+        function changeNode() {
+            parent.replaceChild(third, first);			// first 요소를 삭제하고, 그 대신 third 요소를 삽입함.
+        }
+    </script>
+
 </body>
 
 </html>
