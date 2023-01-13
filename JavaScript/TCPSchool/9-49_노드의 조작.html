@@ -19,6 +19,19 @@
         }
     </script>
 
+    <h1>속성 노드의 값 변경</h1>
+    <p>속성 노드의 값을 변경하고 싶어요!</p>
+    <button onclick="changeAttribute()">속성 변경!</button>
+
+    <script>
+        var para;
+        function changeAttribute() {
+            // 모든 <p> 요소중에서 첫 번째 요소에 클래스 속성값으로 "para"를 설정함.
+            document.getElementsByTagName("p")[0].setAttribute("class", "para");
+            // 클래스가 설정되면 해당 클래스에 설정되어 있던 스타일이 자동으로 적용됨.
+        }
+    </script>
+
 </body>
 
 </html>
