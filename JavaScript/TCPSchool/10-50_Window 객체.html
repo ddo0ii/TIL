@@ -27,6 +27,18 @@
         document.write(document.title);												// 전역 객체
     </script>
 
+    <h1>브라우저 새 창 열기</h1>
+    <button onclick="openWindow()">새로운 창 열기</button>
+
+    <script>
+        var newWindowObj;
+        // 변수 strWindowFeatures를 통해 새롭게 여는 웹 브라우저 창의 옵션들을 일일이 설정할 수 있음.
+        var strWindowFeatures = "menubar = yes,location = yes,resizable = yes,scrollbars = yes,status = yes";
+        function openWindow() {
+            newWindowObj = window.open("/html/intro", "HTML 개요", strWindowFeatures);
+        }
+    </script>
+
 </body>
 
 </html>
