@@ -24,6 +24,14 @@
         document.write("실제 사용할 수 있는 화면의 높이는 " + screen.availHeight + "픽셀입니다.");
     </script>
 
+    <h1>한 색상당 사용할 수 있는 비트수</h1>
+
+    <script>
+        var bitColorDepth = screen.colorDepth;
+        document.write("사용자 화면에서 한 색상당 사용할 수 있는 비트수는 " + bitColorDepth + "개입니다.<br>");
+        document.write("즉, 한 색상은 총 " + Math.pow(2, bitColorDepth) + "가지로 표현됩니다.");
+    </script>
+
 </body>
 
 </html>
