@@ -18,6 +18,15 @@
         document.write("웹 브라우저의 너비는 " + windowWidth + "픽셀이고, 높이는 " + windowHeight + "픽셀입니다.");
     </script>
 
+    <h1>window 접두사의 생략</h1>
+
+    <script>
+        alert("전역 함수 호출시 window 접두사 생략 가능함!");						// 전역 함수
+        document.write("현재 브라우저의 수평 위치는 " + screenX + "입니다.<br>");	// 전역 변수
+        document.write("현재 브라우저의 수직 위치는 " + screenY + "입니다.<br>");	// 전역 변수
+        document.write(document.title);												// 전역 객체
+    </script>
+
 </body>
 
 </html>
