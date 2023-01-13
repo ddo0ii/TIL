@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript BOM Window Object</title>
+</head>
+
+<body>
+
+    <h1>브라우저 창 크기 조절</h1>
+    <p>웹 브라우저의 창 크기를 조절한 뒤에 결과보기를 다시 눌러보세요!</p>
+
+    <script>
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+        document.write("웹 브라우저의 너비는 " + windowWidth + "픽셀이고, 높이는 " + windowHeight + "픽셀입니다.");
+    </script>
+
+</body>
+
+</html>
