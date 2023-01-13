@@ -55,6 +55,17 @@
         }
     </script>
 
+    <h1>텍스트 노드의 데이터 교체</h1>
+    <p id="text">지금 시간은 오후 3시입니다.</p>
+    <button onclick="changeText()">텍스트 교체!</button>
+
+    <script>
+        var text = document.getElementById("text").firstChild;	// 아이디가 "text"인 요소의 텍스트 노드를 선택함.
+        function changeText() {
+            text.replaceData(7, 4, "저녁 7");	// 텍스트 노드의 7번째 문자부터 4개의 문자를 "저녁 7"로 교체함.
+        }
+    </script>
+
 </body>
 
 </html>
