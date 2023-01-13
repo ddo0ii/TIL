@@ -29,6 +29,20 @@
         // 현재 문서의 파일 경로명은 /examples/tryit/tryhtml.php입니다.
     </script>
 
+    <h1>현재 창에 문서 불러오기</h1>
+    <p>아래 버튼을 눌러 새로운 문서를 연 후에 브라우저의 뒤로 가기 버튼을 눌러보세요!</p>
+    <button onclick="openDocument()">새로운 문서 열기</button>
+    <button onclick="openDocumentWithReplace()">이전 문서 삭제 후 새로운 문서 열기</button>
+
+    <script>
+        function openDocument() {
+            location.assign("/index.php");
+        }
+        function openDocumentWithReplace() {
+            location.replace("/index.php");
+        }
+    </script>
+
 </body>
 
 </html>
