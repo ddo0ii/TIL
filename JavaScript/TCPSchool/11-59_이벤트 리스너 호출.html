@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript EventListener Call</title>
+</head>
+
+<body>
+
+    <h1>이벤트 객체</h1>
+    <button id="btn">눌러보세요!</button>
+    <p id="text"></p>
+
+    <script>
+        var btn = document.getElementById("btn");	// 아이디가 "btn"인 요소를 선택함.
+        btn.addEventListener("click", clickBtn);	// 선택한 요소에 click 이벤트 리스너를 등록함.
+
+        function clickBtn(event) {
+            document.getElementById("text").innerHTML =
+                "이 이벤트의 타입은 " + event.type + "이며, 이벤트의 대상은 " + event.target + "입니다.";
+        }
+    </script>
+
+</body>
+
+</html>
