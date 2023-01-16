@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Event Concept</title>
+</head>
+
+<body>
+
+    <h1>이벤트 타입</h1>
+    <p onclick="changeText(this)">이 문자열을 클릭해 보세요!</p>
+
+    <script>
+        function changeText(element) {
+            element.innerHTML = "문자열의 내용이 바뀌었습니다!";
+        }
+    </script>
+
+</body>
+
+</html>
