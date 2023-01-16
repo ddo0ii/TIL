@@ -52,6 +52,24 @@
         }
     </script>
 
+    <h1>setInterval() 메소드</h1>
+    <button onclick="startInterval()">2초마다 현재 시간을 표시합니다!</button>
+    <button onclick="cancelInterval()">시간 갱신 중지!</button>
+    <p id="date"></p>
+
+    <script>
+        var timeoutId;
+        function startInterval() {
+            timeoutId = setInterval(printCurrentDate, 2000);
+        }
+        function cancelInterval() {
+            clearInterval(timeoutId);
+        }
+        function printCurrentDate() {
+            document.getElementById("date").innerHTML += new Date() + "<br>";
+        }
+    </script>
+
 </body>
 
 </html>
