@@ -17,6 +17,23 @@
         }
     </script>
 
+    <h1>confirm() 메소드</h1>
+    <button onclick="confirmDialogBox()">confirm 대화 상자</button>
+    <p id="text"></p>
+
+    <script>
+        function confirmDialogBox() {
+            var str;
+
+            if (confirm("확인이나 취소를 눌러주세요!") == true) {
+                str = "당신은 확인을 눌렀습니다!";
+            } else {
+                str = "당신은 취소을 눌렀습니다!";
+            }
+            document.getElementById("text").innerHTML = str;
+        }
+    </script>
+
 </body>
 
 </html>
