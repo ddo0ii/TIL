@@ -34,6 +34,24 @@
         }
     </script>
 
+    <h1>clearTimeout() 메소드</h1>
+    <button onclick="startTimeout()">2초 뒤에 현재 시간을 표시합니다!</button>
+    <button onclick="cancelTimeout()">시간 표시 취소!</button>
+    <p id="date"></p>
+
+    <script>
+        var timeoutId;
+        function startTimeout() {
+            timeoutId = setTimeout(printCurrentDate, 2000);
+        }
+        function cancelTimeout() {
+            clearTimeout(timeoutId);
+        }
+        function printCurrentDate() {
+            document.getElementById("date").innerHTML += new Date() + "<br>";
+        }
+    </script>
+
 </body>
 
 </html>
