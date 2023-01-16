@@ -21,6 +21,18 @@
     <h1>HTML 태그 내의 속성으로 등록</h1>
     <p onclick="alert('문자열을 클릭했어요!')">이 문자열을 클릭해 보세요!</p>
 
+    <h1>addEventListener() 메소드</h1>
+    <button id="btn">텍스트 보여주기!</button>
+    <p id="text"></p>
+
+    <script>
+        var showBtn = document.getElementById("btn");	// 아이디가 "btn"인 요소를 선택함.
+        showBtn.addEventListener("click", showText);	// 선택한 요소에 click 이벤트 리스너를 등록함.
+        function showText() {
+            document.getElementById("text").innerHTML = "짜잔~!! 텍스트가 나타났어요!!";
+        }
+    </script>
+
 </body>
 
 </html>
