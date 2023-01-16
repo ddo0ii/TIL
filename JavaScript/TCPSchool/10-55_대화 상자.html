@@ -34,6 +34,20 @@
         }
     </script>
 
+    <h1>prompt() 메소드</h1>
+    <button onclick="promptDialogBox()">prompt 대화 상자</button>
+    <p id="text"></p>
+
+    <script>
+        function promptDialogBox() {
+            var inputStr = prompt("당신의 이름을 입력해 주세요 : ", "홍길동");
+
+            if (inputStr != null) {
+                document.getElementById("text").innerHTML = "당신의 이름은 " + inputStr + "입니다.";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
