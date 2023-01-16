@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript BOM Timer</title>
+</head>
+
+<body>
+
+    <h1>setTimeout() 메소드</h1>
+    <button onclick="startTimeout()">2초 뒤에 현재 시간을 표시합니다!</button>
+    <p id="date"></p>
+
+    <script>
+        function startTimeout() {
+            setTimeout(printCurrentDate, 2000);
+        }
+        function printCurrentDate() {
+            document.getElementById("date").innerHTML = new Date();
+        }
+    </script>
+
+    <h1>setInterval() 메소드</h1>
+    <button onclick="startInterval()">2초마다 현재 시간을 표시합니다!</button>
+    <p id="date"></p>
+
+    <script>
+        function startInterval() {
+            setInterval(printCurrentDate, 2000);
+        }
+        function printCurrentDate() {
+            document.getElementById("date").innerHTML += new Date() + "<br>";
+        }
+    </script>
+
+</body>
+
+</html>
