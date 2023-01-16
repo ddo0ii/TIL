@@ -55,6 +55,30 @@
         }
     </script>
 
+    <h1>이벤트 리스너 삭제</h1>
+    <p>아래 버튼에 마우스를 올리거나 클릭해 보세요!</p>
+    <button id="btn">삭제 버튼</button>
+    <p id="text"></p>
+
+    <script>
+        var btn = document.getElementById("btn");			// 아이디가 "btn"인 요소를 선택함.
+        btn.addEventListener("click", clickBtn);			// 선택한 요소에 click 이벤트 리스너를 등록함.
+        btn.addEventListener("mouseover", mouseoverBtn);	// 선택한 요소에 mouseover 이벤트 리스너를 등록함.
+        btn.addEventListener("mouseout", mouseoutBtn);		// 선택한 요소에 mouseout 이벤트 리스너를 등록함.
+
+        function clickBtn() {
+            btn.removeEventListener("mouseover", mouseoverBtn);
+            btn.removeEventListener("mouseout", mouseoutBtn);
+            document.getElementById("text").innerHTML = "이벤트 리스너가 삭제되었어요!";
+        }
+        function mouseoverBtn() {
+            document.getElementById("text").innerHTML = "버튼 위에 마우스가 있네요!";
+        }
+        function mouseoutBtn() {
+            document.getElementById("text").innerHTML = "버튼 밖으로 마우스가 나갔어요!";
+        }
+    </script>
+
 </body>
 
 </html>
