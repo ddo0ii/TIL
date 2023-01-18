@@ -25,6 +25,32 @@
         */
     </script>
 
+
+    <h1>블록별 strict 모드</h1>
+    <p id="noStrict"></p>
+    <p id="funcStrict"></p>
+
+    <script>
+        str = "실수!";			// 선언되지 않은 변수를 사용했지만, 자동으로 전역 변수로 선언됨.
+        document.getElementById("noStrict").innerHTML = str + "<br>";
+
+        function StrictBlock() {
+            "use strict"		// 함수 블록만을 strict 모드로 선언함.
+            try {
+                num = 123		// 선언되지 않은 변수를 사용했으므로, 에러가 발생함.
+            } catch (ex) {
+                document.getElementById("funcStrict").innerHTML = ex.name + "<br>";
+                document.getElementById("funcStrict").innerHTML += ex.message;
+            }
+        }
+        StrictBlock();
+        /*
+        실수!
+
+        ReferenceError
+        num is not defined
+        */
+    </script>
 </body>
 
 </html>
