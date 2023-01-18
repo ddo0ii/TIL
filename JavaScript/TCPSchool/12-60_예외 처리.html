@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Exception Handling</title>
+</head>
+
+<body>
+
+    <h1>예외 발생</h1>
+    <button id="throwExBtn">예외 발생!</button>
+    <p id="text"></p>
+
+    <script>
+        var btn = document.getElementById("throwExBtn");		// 아이디가 "throwExBtn"인 요소를 선택함.
+        btn.addEventListener("click", throwEx);					// 선택한 요소에 click 이벤트 리스너를 등록함.
+        function throwEx() {
+            try {
+                throw new Error("직접 발생시킨 에러입니다!");	// Error 객체를 사용해 명시적으로 에러를 발생시킴.
+            } catch (ex) {	// 발생된 에러를 매개변수 ex로 접근할 수 있음.
+                document.getElementById("text").innerHTML = ex.name + "<br>";	// name 프로퍼티는 에러의 타입을 저장함.
+                document.getElementById("text").innerHTML += ex.message;		// message 프로퍼티는 에러 메세지를 저장함.
+            }
+        }
+    </script>
+
+</body>
+
+</html>
