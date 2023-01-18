@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Strict Mode</title>
+</head>
+
+<body>
+
+    <h1>strict 모드</h1>
+    <p id="text"></p>
+
+    <script>
+        "use strict"		// 전체 스크립트를 strict 모드로 설정함.
+        try {
+            num = 123;		// 선언되지 않은 변수를 사용했으므로, 에러가 발생함.
+        } catch (ex) {
+            document.getElementById("text").innerHTML = ex.name + "<br>";
+            document.getElementById("text").innerHTML += ex.message;
+        }
+    </script>
+
+</body>
+
+</html>
