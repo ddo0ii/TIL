@@ -17,6 +17,24 @@
         document.getElementById("text").innerHTML = regStr + "<br>" + regObj;
     </script>
 
+
+    <h1>단순한 패턴 검색</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "간장 공장 공장장은 강 공장장이고, 된장 공장 공장장은 장 공장장이다."
+        var strReg1 = /공장/;
+        var strReg2 = /장공/;
+
+        document.write(targetStr.search(strReg1) + "<br>");
+        document.write(targetStr.search(strReg2));
+        /*
+        3
+        -1
+        */
+        // 첫번째로 나타난 곳을 출력
+    </script>
+
 </body>
 
 </html>
