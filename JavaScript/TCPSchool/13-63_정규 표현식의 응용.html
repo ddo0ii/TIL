@@ -72,6 +72,24 @@
         */
     </script>
 
+    <h1>정규 표현식의 양화사</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "Hello World!";
+        var zeroReg = /lo*/;		// 문자 'l' 다음에 문자 'o'가 0번 이상 나타나는 경우를 검색함.
+        var oneReg = /lo+/;			// 문자 'l' 다음에 문자 'o'가 1번 이상 나타나는 경우를 검색함.
+        var zeroOneReg = /lo?/;		// 문자 'l' 다음에 문자 'o'가 0 또는 1번만 나타나는 경우를 검색함.
+        document.getElementById("text").innerHTML =
+            targetStr.search(zeroReg) + "<br>" + targetStr.search(oneReg) + "<br>" + targetStr.search(zeroOneReg);
+
+        /*
+        2
+        3
+        2
+        */
+    </script>
+
 </body>
 
 </html>
