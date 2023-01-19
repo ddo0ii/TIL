@@ -43,6 +43,25 @@
         */
     </script>
 
+
+    <h1>특수 문자 '\b'</h1>
+    <p id="text"></p>
+
+    <script>
+        var text = document.getElementById("text");
+
+        var targetStr1 = "abc123abc";
+        var targetStr2 = "abc 123 abc";
+        var targetStr3 = "abc@123!abc";
+
+        // 단어의 맨 앞이나 맨 뒤에 부분 문자열 "bc"가 존재하는지를 검색함.
+        var reg = /bc\b/;
+
+        text.innerHTML = targetStr1.search(reg) + "<br>";
+        text.innerHTML += targetStr2.search(reg) + "<br>";
+        text.innerHTML += targetStr3.search(reg);
+    </script>
+
 </body>
 
 </html>
