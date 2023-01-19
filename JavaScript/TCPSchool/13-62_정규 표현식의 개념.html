@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Regular Expression</title>
+</head>
+
+<body>
+
+    <h1>정규 표현식의 생성</h1>
+    <p id="text"></p>
+
+    <script>
+        var regStr = /a+bc/;				// 정규 표현식 리터럴을 이용한 생성
+        var regObj = new RegExp("a+bc");	// RegExp 객체를 이용한 생성
+        document.getElementById("text").innerHTML = regStr + "<br>" + regObj;
+    </script>
+
+</body>
+
+</html>
