@@ -27,6 +27,22 @@
         */
     </script>
 
+    <h1>특수 문자 '\s'와 '\w'</h1>
+    <p id="text"></p>
+
+    <script>
+        var text = document.getElementById("text");
+
+        var targetStr = "abc 123";
+        // 공백 문자를 사이에 두는 언더스코어(_)를 포함한 영문자 및 숫자로 이루어진 문자열을 검색함.
+        var reg = /\w\s\w/;
+
+        text.innerHTML = targetStr.match(reg);
+        /*
+        c 1
+        */
+    </script>
+
 </body>
 
 </html>
