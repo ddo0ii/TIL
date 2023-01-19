@@ -90,6 +90,24 @@
         */
     </script>
 
+
+    <h1>정규 표현식의 양화사</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "123abc";
+        var oneReg = /\d+/;			// 숫자를 검색함. [0-9]와 같음.
+        var anotherReg = /\d+?/;	// 숫자를 검색하지만, 가능한 적은 수의 문자를 가지는 패턴을 검색함.
+        document.getElementById("text").innerHTML =
+            targetStr.match(oneReg) + "<br>" + targetStr.match(anotherReg);
+
+        /*
+        123
+        1
+        */
+    </script>
+
+
 </body>
 
 </html>
