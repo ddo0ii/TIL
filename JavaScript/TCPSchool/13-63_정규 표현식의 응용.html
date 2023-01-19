@@ -108,6 +108,24 @@
     </script>
 
 
+    <h1>정규 표현식의 괄호</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "Hong Gil Dong";
+        var nameReg = /(\w+)\s(\w+)\s(\w+)/;					// 공백 문자를 기준으로 각 부분 문자열을 저장함.
+        var engName = targetStr.replace(nameReg, "$2 $3 $1");	// 첫 번째 부분 문자열을 맨 마지막으로 위치시킴.
+        document.getElementById("text").innerHTML = engName;
+
+        /*
+        Gil Dong Hong
+        */
+        /*
+        위의 예제에서 괄호로 묶여진 정규 표현식으로 검색되는 세 개의 부분 문자열은 차례대로 저장
+        이때 replace() 메소드에서는 이렇게 저장된 부분 문자열을 $1, $2, ..., $n 표현을 이용하여 사용할 수 있음
+        */
+    </script>
+
 </body>
 
 </html>
