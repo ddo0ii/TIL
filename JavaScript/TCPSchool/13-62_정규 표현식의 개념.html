@@ -35,6 +35,18 @@
         // search() 메소드는 일치하는 문자열 중에서 첫 번째 문자열의 인덱스만을 반환
     </script>
 
+
+    <h1>정규 표현식의 플래그</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "bcabcAB";
+        var strReg = /AB/;				// 검색 패턴 비교 시 기본 설정으로 대소문자를 구분함.
+        var strUsingFlag = /AB/i;		// new RegExp("AB", "i")와 동일함.
+        document.getElementById("text").innerHTML =
+            targetStr.search(strReg) + "<br>" + targetStr.search(strUsingFlag);
+    </script>
+
 </body>
 
 </html>
