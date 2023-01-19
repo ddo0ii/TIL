@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Regular Expression</title>
+</head>
+
+<body>
+
+    <h1>특수 문자 '\d'</h1>
+    <p id="text"></p>
+
+    <script>
+        var text = document.getElementById("text");
+
+        var targetStr = "ab1bc2cd3de";
+        var reg1 = /\d/;			// 0부터 9까지의 숫자를 검색함.
+        var reg2 = /[3-9]/;			// 3부터 9까지의 숫자를 검색함.
+
+        text.innerHTML = targetStr.search(reg1) + "<br>";
+        text.innerHTML += targetStr.search(reg2);
+
+        /*
+        2
+        8
+        */
+    </script>
+
+</body>
+
+</html>
