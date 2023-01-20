@@ -22,6 +22,21 @@
         */
     </script>
 
+
+    <h1>test() 메소드</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "abbcdefabgh";
+        var firstResult = /ab+/.test(targetStr);		// 패턴과 일치하는 문자열이 여러 개인 경우
+        var secondResult = /abbb+/.test(targetStr);		// 패턴과 일치하는 문자열이 하나도 없는 경우
+        document.getElementById("text").innerHTML = firstResult + "<br>" + secondResult;
+        /*
+        true
+        false
+        */
+    </script>
+
 </body>
 
 </html>
