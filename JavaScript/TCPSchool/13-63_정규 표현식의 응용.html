@@ -126,6 +126,24 @@
         */
     </script>
 
+
+    <h1>정규 표현식의 괄호</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "abc 123 abc 123";
+        var oneReg = /(\w+) (\d+)/;				// abc 123, abc, 123
+        var anotherReg = /(\w+) (\d+) \1 \2/;	// abc 123 abc 123, abc, 123
+        document.getElementById("text").innerHTML =
+            targetStr.match(oneReg) + "<br>" + targetStr.match(anotherReg);
+
+        /*
+        abc 123,abc,123
+        abc 123 abc 123,abc,123
+        */
+    </script>
+
+
 </body>
 
 </html>
