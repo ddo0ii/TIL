@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript RegExp Object</title>
+</head>
+
+<body>
+
+    <h1>exec() 메소드</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "abbcdefabgh";
+        var firstResult = /ab+/.exec(targetStr);		// 패턴과 일치하는 문자열이 여러 개인 경우
+        var secondResult = /abbb+/.exec(targetStr);		// 패턴과 일치하는 문자열이 하나도 없는 경우
+        document.getElementById("text").innerHTML = firstResult + "<br>" + secondResult;
+        /*
+        abb
+        null
+        */
+    </script>
+
+</body>
+
+</html>
